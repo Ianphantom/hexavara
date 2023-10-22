@@ -9,15 +9,21 @@ const HeaderComponent = () => {
     <HeaderComponentStyled>
       <div className='container'>
         <div className='logo'>
-          <img src={hexavaraLogoHeader} alt='Hexavara Logo' />
+          <img
+            className='pointer'
+            src={hexavaraLogoHeader}
+            alt='Hexavara Logo'
+          />
         </div>
         <div className='navigation'>
-          <div className='paragraph-medium regular'>Works</div>
-          <div className='paragraph-medium regular'>About Us</div>
-          <div className='paragraph-medium regular'>Products</div>
-          <div className='paragraph-medium regular'>Services</div>
+          <div className='paragraph-medium regular pointer'>Works</div>
+          <div className='paragraph-medium regular pointer'>About Us</div>
+          <div className='paragraph-medium regular pointer'>Products</div>
+          <div className='paragraph-medium regular pointer'>Services</div>
         </div>
-        <div className='cta paragraph-medium regular'>Start a Project?</div>
+        <div className='cta paragraph-medium regular pointer'>
+          Start a Project?
+        </div>
       </div>
     </HeaderComponentStyled>
   );
@@ -33,12 +39,7 @@ const HeaderComponentStyled = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    .logo {
-      cursor: pointer;
-    }
-
     .navigation {
-      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -46,7 +47,6 @@ const HeaderComponentStyled = styled.div`
     }
 
     .cta {
-      cursor: pointer;
       background: var(--hxvr-brand-70);
       border-radius: 8px;
       padding: 10px 16px;
