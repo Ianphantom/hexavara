@@ -77,11 +77,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .bold{
-        font-size: 700 !important;
+        font-weight: 700 !important;
     }
 
     .regular{
-        font-size: 400 !important;
+        font-weight: 400 !important;
     }
 
     .display-large{
@@ -142,6 +142,18 @@ const GlobalStyle = createGlobalStyle`
         font-size: 0.75rem;
         line-height:1.25rem;
         font-weight: 600;
+    }
+
+    .pointer{
+        cursor: pointer;
+    }
+
+    .border-radius-medium{
+        border-radius: 8px;
+    }
+
+    .border-radius-large{
+        border-radius: 12px;
     }
     
 `;
