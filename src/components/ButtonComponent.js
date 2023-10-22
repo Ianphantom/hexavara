@@ -1,15 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-const ButtonComponent = ({ text, ...otherProps }) => {
+const ButtonComponent = ({ text, icon, ...otherProps }) => {
   return (
     <ButtonComponentStyled>
-      <div {...otherProps}>{text}</div>
+      <div {...otherProps}>
+        <div>{text}</div>
+        {icon ? <img src={icon} alt='icon-preview' /> : ""}
+      </div>
     </ButtonComponentStyled>
   );
 };
 
 const ButtonComponentStyled = styled.div`
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
   .button {
     padding: 12px 16px;
   }
@@ -33,7 +41,6 @@ const ButtonComponentStyled = styled.div`
   .outlined-secondary {
     border: 1px solid var(--hxvr-neutral-30);
     color: var(--hxvr-neutral-30);
-    background: var(--hxvr-brand-70);
   }
 `;
 
