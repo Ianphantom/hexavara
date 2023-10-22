@@ -155,6 +155,10 @@ const GlobalStyle = createGlobalStyle`
     .border-radius-large{
         border-radius: 12px;
     }
+
+    .border-radius-4{
+        border-radius: 4px;
+    }
     
 `;
 
