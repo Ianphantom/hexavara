@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+// import component
+import ButtonComponent from "./ButtonComponent";
+
 // import images assets
 import hexavaraLogoHeader from "../assets/images/hexavara_header.png";
 
@@ -21,9 +24,10 @@ const HeaderComponent = () => {
           <div className='paragraph-medium regular pointer'>Products</div>
           <div className='paragraph-medium regular pointer'>Services</div>
         </div>
-        <div className='cta paragraph-medium regular pointer'>
-          Start a Project?
-        </div>
+        <ButtonComponent
+          text='Start a Project?'
+          className='button filled-primary border-radius-medium pointer'
+        />
       </div>
     </HeaderComponentStyled>
   );
