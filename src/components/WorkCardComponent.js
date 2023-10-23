@@ -34,6 +34,13 @@ const WorkCardComponent = ({ tag, title, desc, theme }) => {
 
 const WorkCardComponentStyled = styled.div`
   padding: 20px 20px;
+  &:hover {
+    border-radius: 8px;
+    border: 1px solid var(--primary-base, #3182ff);
+    background: var(--color-gray-2, #fdfdfd);
+    box-shadow: 0px 12px 24px -4px rgba(59, 65, 69, 0.08),
+      0px 0px 12px -4px rgba(59, 65, 69, 0.08);
+  }
   &.small {
     .image-container {
       height: 137px;
