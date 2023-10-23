@@ -11,6 +11,7 @@ const TagComponent = ({ text, theme }) => {
 
 const TagComponentStyled = styled.div`
   padding: 4px 8px;
+  width: max-content;
 
   &.primary {
     background: var(--hxvr-brand-30);
