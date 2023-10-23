@@ -16,6 +16,11 @@ const TagComponentStyled = styled.div`
     background: var(--hxvr-brand-30);
     color: var(--hxvr-brand-70);
   }
+
+  &.outlined-primary {
+    border: 1px solid var(--hxvr-brand-70);
+    color: #3b4145;
+  }
 `;
 
 export default TagComponent;
