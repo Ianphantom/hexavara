@@ -7,17 +7,17 @@ import ButtonComponent from "./ButtonComponent";
 // import images assets
 import hexavaraLogoHeader from "../assets/images/hexavara_header.png";
 import caretDown from "../assets/svg/caretDown.svg";
-import hamburgerIcon from "../assets/svg/hamburgerIcon.svg";
-import closeIcon from "../assets/svg/closeIcon.svg";
+
+// import data
 import { dataProduct } from "../data/data-product";
 
 const ProductMenu = () => {
   return (
     <div className='product-sub-list show'>
-      <div className='container'>
+      <div>
         <div className='row'>
           {dataProduct.map((item) => (
-            <ProductItemStyled className='col-md-6' key={item.id}>
+            <ProductItemStyled className='col-md-6 pointer' key={item.id}>
               <div className='logo-product'>
                 <img src={item.icon} alt={item.name} />
               </div>
@@ -39,50 +39,55 @@ const ProductMenu = () => {
 
 const HeaderComponent = () => {
   const [showProductMenu, setShowProductMenu] = useState(0);
-
-  const productMenuHandler = () => {
-    setShowProductMenu(!showProductMenu);
-  };
-
   return (
     <HeaderComponentStyled>
-      <div className='container header-container'>
-        <div className='logo'>
+      <div className='container'>
+        <nav className='navbar navbar-expand-lg navbar-light'>
           <img
             className='pointer'
             src={hexavaraLogoHeader}
             alt='Hexavara Logo'
           />
-          <div className='responsive'>
-            <img src={hamburgerIcon} alt='menu-icon' />
-            <img src={closeIcon} alt='close-icon' />
-          </div>
-        </div>
-        <div className='navigation'>
-          <div className='paragraph-medium regular pointer'>Works</div>
-          <div className='paragraph-medium regular pointer'>About Us</div>
-          <div
-            className='paragraph-medium regular pointer'
-            onClick={productMenuHandler}
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarNavAltMarkup'
+            aria-controls='navbarNavAltMarkup'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
           >
-            Products{" "}
-            <img
-              src={caretDown}
-              alt='detail-icon'
-              className={`icon ${showProductMenu ? "rotate-180" : ""}`}
-            />
+            <span className='navbar-toggler-icon'></span>
+          </button>
+          <div
+            className='collapse navbar-collapse navbar-container'
+            id='navbarNavAltMarkup'
+          >
+            <div className='navbar-nav navigation mx-auto'>
+              <div className='paragraph-medium regular pointer'>Works</div>
+              <div className='paragraph-medium regular pointer'>About Us</div>
+              <div
+                className='paragraph-medium regular pointer'
+                onClick={() => setShowProductMenu(!showProductMenu)}
+              >
+                Products{" "}
+                <img
+                  src={caretDown}
+                  alt='detail-icon'
+                  className={`icon ${showProductMenu ? "rotate-180" : ""}`}
+                />
+              </div>
+              {showProductMenu ? <ProductMenu /> : ""}
+              <div className='paragraph-medium regular pointer'>Services</div>
+            </div>
+            <div className='button-container'>
+              <ButtonComponent
+                text='Start a Project?'
+                className='button filled-primary border-radius-medium pointer'
+              />
+            </div>
           </div>
-
-          {showProductMenu ? <ProductMenu /> : ""}
-
-          <div className='paragraph-medium regular pointer'>Services</div>
-        </div>
-        <div className='button-container'>
-          <ButtonComponent
-            text='Start a Project?'
-            className='button filled-primary border-radius-medium pointer'
-          />
-        </div>
+        </nav>
       </div>
     </HeaderComponentStyled>
   );
@@ -94,41 +99,9 @@ const HeaderComponentStyled = styled.div`
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
   position: relative;
 
-  .header-container {
-    display: flex;
-    align-items: center;
+  .navbar {
+    display: flex !important;
     justify-content: space-between;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .responsive {
-        display: none;
-      }
-    }
-
-    .navigation {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
-    }
-
-    .cta {
-      background: var(--hxvr-brand-70);
-      border-radius: 8px;
-      padding: 10px 16px;
-      color: white;
-    }
-  }
-
-  .icon {
-    transition: transform 0.5s;
-  }
-
-  .rotate-180 {
-    transform: rotate(180deg);
   }
 
   .product-sub-list {
@@ -141,24 +114,44 @@ const HeaderComponentStyled = styled.div`
     box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, 0.08),
       0px 4px 6px -2px rgba(16, 24, 40, 0.03);
   }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
 
-  @media (max-width: 768px) {
+  .icon {
+    transition: transform 0.5s;
+  }
+
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 991px) {
+    .navigation {
+      align-items: flex-start;
+    }
+
+    .navbar-container {
+      padding: 24px 20px;
+      background: #fcfcfc;
+    }
+
+    .button-container {
+      margin-top: 32px;
+    }
+
     .product-sub-list {
       position: static;
     }
+  }
 
-    .small-not-show {
-      display: none;
-    }
-
-    .header-container {
-      flex-direction: column;
-      align-items: flex-start;
-      .navigation {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
+  @media (max-width: 768px) {
+    /* .product-sub-list {
+      position: static;
+    } */
   }
 `;
 
