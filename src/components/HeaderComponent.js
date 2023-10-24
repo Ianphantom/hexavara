@@ -147,12 +147,6 @@ const HeaderComponentStyled = styled.div`
       position: static;
     }
 
-    .logo {
-      .responsive {
-        display: block;
-      }
-    }
-
     .small-not-show {
       display: none;
     }
@@ -162,14 +156,7 @@ const HeaderComponentStyled = styled.div`
       align-items: flex-start;
       .navigation {
         flex-direction: column;
-      }
-    }
-  }
-
-  @media (min-width: 768px) {
-    .logo {
-      .responsive {
-        display: none;
+        align-items: flex-start;
       }
     }
   }
