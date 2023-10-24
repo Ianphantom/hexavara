@@ -13,7 +13,7 @@ const WorkCardComponent = ({ tag, title, desc, theme }) => {
       <img
         src='https://www.pngkey.com/png/detail/233-2332677_image-500580-placeholder-transparent.png'
         alt='project-icon'
-        className='image-container'
+        className='image-container border-radius-large'
       />
 
       <div className='information'>
