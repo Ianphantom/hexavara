@@ -41,7 +41,7 @@ const CTASectionComponentStyled = styled.div`
     gap: 16px;
 
     .title {
-      max-width: 65%;
+      width: 70%;
       color: var(--hxvr-neutral-30);
     }
 
@@ -54,6 +54,15 @@ const CTASectionComponentStyled = styled.div`
       display: flex;
       align-items: center;
       gap: 16px;
+    }
+  }
+  @media (max-width: 768px) {
+    .title {
+      width: 100% !important;
+    }
+    .button-container {
+      width: 100%;
+      flex-direction: column;
     }
   }
 `;

@@ -25,6 +25,7 @@ const WorkPagesTagButtonComponentStyled = styled.div`
   }
   .text {
     color: var(--hxvr-brand-70);
+    width: max-content;
   }
 `;
 

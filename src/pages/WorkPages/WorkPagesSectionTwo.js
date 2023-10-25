@@ -117,6 +117,12 @@ const WorkPagesSectionTwoStyled = styled.div`
     align-items: center;
     gap: 12px;
     padding: 20px 0px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .work-container {
     display: flex;
@@ -126,6 +132,12 @@ const WorkPagesSectionTwoStyled = styled.div`
     .work-card-container {
       margin-bottom: 32px;
       flex: 0 1 calc(33.33% - 24px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .work-container {
+      flex-direction: column;
     }
   }
 `;
