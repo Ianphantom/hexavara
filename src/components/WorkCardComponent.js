@@ -11,7 +11,7 @@ const WorkCardComponent = ({ tag, title, desc, theme }) => {
   return (
     <WorkCardComponentStyled className={`pointer ${theme}`}>
       <img
-        src='https://www.pngkey.com/png/detail/233-2332677_image-500580-placeholder-transparent.png'
+        src={`https://source.unsplash.com/random/200x200?sig=${Math.random()}`}
         alt='project-icon'
         className='image-container border-radius-large'
       />
@@ -44,12 +44,14 @@ const WorkCardComponentStyled = styled.div`
   &.small {
     .image-container {
       height: 137px;
+      width: 100%;
     }
   }
 
   &.normal {
     .image-container {
       height: 248px;
+      width: 100%;
     }
   }
   .information {

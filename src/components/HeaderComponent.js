@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // import component
 import ButtonComponent from "./ButtonComponent";
@@ -43,11 +44,15 @@ const HeaderComponent = () => {
     <HeaderComponentStyled>
       <div className='container'>
         <nav className='navbar navbar-expand-lg navbar-light'>
-          <img
-            className='pointer'
-            src={hexavaraLogoHeader}
-            alt='Hexavara Logo'
-          />
+          <Link to={"/"}>
+            {" "}
+            <img
+              className='pointer'
+              src={hexavaraLogoHeader}
+              alt='Hexavara Logo'
+            />
+          </Link>
+
           <button
             className='navbar-toggler'
             type='button'
@@ -64,8 +69,12 @@ const HeaderComponent = () => {
             id='navbarNavAltMarkup'
           >
             <div className='navbar-nav navigation mx-auto'>
-              <div className='paragraph-medium regular pointer'>Works</div>
-              <div className='paragraph-medium regular pointer'>About Us</div>
+              <Link to={"/works"}>
+                <div className='paragraph-medium regular pointer'>Works</div>
+              </Link>
+              <Link to={"/about"}>
+                <div className='paragraph-medium regular pointer'>About Us</div>
+              </Link>
               <div
                 className='paragraph-medium regular pointer'
                 onClick={() => setShowProductMenu(!showProductMenu)}
@@ -78,7 +87,9 @@ const HeaderComponent = () => {
                 />
               </div>
               {showProductMenu ? <ProductMenu /> : ""}
-              <div className='paragraph-medium regular pointer'>Services</div>
+              <Link to={"/services"}>
+                <div className='paragraph-medium regular pointer'>Services</div>
+              </Link>
             </div>
             <div className='button-container'>
               <ButtonComponent
