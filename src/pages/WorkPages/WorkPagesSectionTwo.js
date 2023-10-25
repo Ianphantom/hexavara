@@ -5,6 +5,10 @@ import styled from "styled-components";
 import WorkPagesTagButtonComponent from "./WorkPagesTagButtonComponent";
 import WorkCardComponent from "../../components/WorkCardComponent";
 
+// import icon
+import ArrowNarrowLeft from "../../assets/svg/arrowNarrowLeft.svg";
+import ArrowNarrowRight from "../../assets/svg/arrowNarrowRight.svg";
+
 const WorkPagesSectionTwo = () => {
   const [tagActive, setTagActive] = useState("All");
   console.log(tagActive);
@@ -107,11 +111,40 @@ const WorkPagesSectionTwo = () => {
           />
         </div>
       </div>
+
+      <div className='pager'>
+        <div className='pager-item pointer before'>
+          <div className='paragraph-small regular'>
+            <img src={ArrowNarrowLeft} alt='before' />
+          </div>
+        </div>
+        <div className='pager-item pointer active'>
+          <div className='paragraph-small regular'>1</div>
+        </div>
+        <div className='pager-item pointer'>
+          <div className='paragraph-small regular'>2</div>
+        </div>
+        <div className='pager-item pointer'>
+          <div className='paragraph-small regular'>...</div>
+        </div>
+        <div className='pager-item pointer'>
+          <div className='paragraph-small regular'>8</div>
+        </div>
+        <div className='pager-item pointer'>
+          <div className='paragraph-small regular'>9</div>
+        </div>
+        <div className='pager-item pointer after'>
+          <div className='paragraph-small regular'>
+            <img src={ArrowNarrowRight} alt='after' />
+          </div>
+        </div>
+      </div>
     </WorkPagesSectionTwoStyled>
   );
 };
 
 const WorkPagesSectionTwoStyled = styled.div`
+  padding-bottom: 80px;
   .tag-container {
     display: flex;
     align-items: center;
@@ -135,9 +168,47 @@ const WorkPagesSectionTwoStyled = styled.div`
     }
   }
 
+  .pager {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    .pager-item {
+      padding: 8px 8px;
+      &.before,
+      &.after {
+        border-radius: 12px;
+        border: 1px solid #d9dbdb;
+        background: var(--hxvr-neutral-30);
+      }
+      &.active {
+        border-radius: 12px;
+        background: var(--primary-base);
+        color: var(--hxvr-neutral-30);
+      }
+
+      & > div {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     .work-container {
       flex-direction: column;
+    }
+    .pager {
+      gap: 8px;
+      .pager-item {
+        & > div {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
   }
 `;
