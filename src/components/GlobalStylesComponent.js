@@ -84,6 +84,12 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400 !important;
     }
 
+    .display-xlarge{
+        font-size: 4rem;
+        line-height: 5rem;
+        font-weight: 600;
+    }
+
     .display-large{
         font-size: 3.5rem;
         line-height: 4.5rem;
