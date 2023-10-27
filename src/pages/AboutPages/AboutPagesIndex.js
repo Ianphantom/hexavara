@@ -8,6 +8,7 @@ import HappyClientComponent from "../../components/HappyClientComponent";
 import AboutPagesSectionThree from "./AboutPagesSectionThree";
 import AboutPagesSectionFour from "./AboutPagesSectionFour";
 import AboutPagesSectionFive from "./AboutPagesSectionFive";
+import AboutPagesSectionSix from "./AboutPagesSectionSix";
 
 const AboutPagesIndex = () => {
   return (
@@ -22,6 +23,7 @@ const AboutPagesIndex = () => {
       <HappyClientComponent />
       <AboutPagesSectionFour />
       <AboutPagesSectionFive />
+      <AboutPagesSectionSix />
       <CTASectionComponent title='Empower your team and build a product your users love.' />
     </div>
   );
