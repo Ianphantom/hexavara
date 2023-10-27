@@ -68,6 +68,10 @@ const ProfileContainerStyled = styled.div`
       color: var(--hxvr-neutral-secondary);
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const AboutPagesSectionFiveStyled = styled.div`
@@ -82,6 +86,12 @@ const AboutPagesSectionFiveStyled = styled.div`
     align-items: center;
     gap: 60px;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .team-container {
+      flex-direction: column;
+    }
   }
 `;
 

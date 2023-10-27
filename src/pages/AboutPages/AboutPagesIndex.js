@@ -22,7 +22,9 @@ const AboutPagesIndex = () => {
       </div>
       <HappyClientComponent />
       <AboutPagesSectionFour />
-      <AboutPagesSectionFive />
+      <div className='container'>
+        <AboutPagesSectionFive />
+      </div>
       <AboutPagesSectionSix />
       <CTASectionComponent title='Empower your team and build a product your users love.' />
     </div>
