@@ -10,6 +10,7 @@ import FooterComponent from "./components/FooterComponent";
 // import pages
 import WorkPagesIndex from "./pages/WorkPages/WorkPagesIndex";
 import AboutPagesIndex from "./pages/AboutPages/AboutPagesIndex";
+import LandingPagesIndex from "./pages/LandingPages/LandingPagesIndex";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <GlobalStyle />
       <HeaderComponent />
       <Routes>
-        <Route exact path='/' element='Home' />
+        <Route exact path='/' element={<LandingPagesIndex />} />
         <Route exact path='/works' element={<WorkPagesIndex />} />
         <Route exact path='/about' element={<AboutPagesIndex />} />
+        <Route exact path='/home' element={<LandingPagesIndex />} />
       </Routes>
       <FooterComponent />
     </div>
