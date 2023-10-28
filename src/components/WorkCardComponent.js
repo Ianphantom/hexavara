@@ -45,6 +45,7 @@ const WorkCardComponentStyled = styled.div`
     .image-container {
       height: 137px;
       width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -52,6 +53,7 @@ const WorkCardComponentStyled = styled.div`
     .image-container {
       height: 248px;
       width: 100%;
+      object-fit: cover;
     }
   }
   .information {
