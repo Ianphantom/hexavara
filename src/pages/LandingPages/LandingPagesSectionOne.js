@@ -29,6 +29,7 @@ const LandingPagesSectionOne = () => {
 };
 
 const LandingPagesSectionOneStyled = styled.div`
+  margin-bottom: 40px;
   background: linear-gradient(
       180deg,
       rgba(13, 13, 13, 0.2) 17.27%,
