@@ -4,6 +4,7 @@ import React from "react";
 import LandingPagesSectionOne from "./LandingPagesSectionOne";
 import LandingPagesSectionTwo from "./LandingPagesSectionTwo";
 import LandingPagesSectionThree from "./LandingPagesSectionThree";
+import LandingPagesSectionFour from "./LandingPagesSectionFour";
 
 const LandingPagesIndex = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPagesIndex = () => {
         <LandingPagesSectionTwo />
       </div>
       <LandingPagesSectionThree />
+      <LandingPagesSectionFour />
     </div>
   );
 };
