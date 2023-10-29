@@ -5,6 +5,7 @@ import LandingPagesSectionOne from "./LandingPagesSectionOne";
 import LandingPagesSectionTwo from "./LandingPagesSectionTwo";
 import LandingPagesSectionThree from "./LandingPagesSectionThree";
 import LandingPagesSectionFour from "./LandingPagesSectionFour";
+import LandingPagesSectionFive from "./LandingPagesSectionFive";
 
 const LandingPagesIndex = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPagesIndex = () => {
       </div>
       <LandingPagesSectionThree />
       <LandingPagesSectionFour />
+      <LandingPagesSectionFive />
     </div>
   );
 };

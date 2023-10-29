@@ -18,11 +18,6 @@ const LandingPagesSectionThree = () => {
         <div className='video-container'>
           <iframe
             title='HQ'
-            marginwidth='0'
-            marginheight='0'
-            hspace='0'
-            vspace='0'
-            frameborder='0'
             src='https://www.youtube.com/embed/UC3PbMpkEtM'
             allowFullScreen
           ></iframe>
