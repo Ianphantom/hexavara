@@ -10,6 +10,7 @@ import LandingPagesSectionSix from "./LandingPagesSectionSix";
 import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
 import LandingPagesSectionSeven from "./LandingPagesSectionSeven";
+import LandingPagesSectionEight from "./LandingPagesSectionEight";
 
 const LandingPagesIndex = () => {
   return (
@@ -23,11 +24,13 @@ const LandingPagesIndex = () => {
       <LandingPagesSectionFive />
       <LandingPagesSectionSix />
       <HappyClientComponent />
+
+      <LandingPagesSectionSeven />
+      <LandingPagesSectionEight />
       <CTASectionComponent
         title='Ready to work with us?'
         desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.'
       />
-      <LandingPagesSectionSeven />
     </div>
   );
 };
