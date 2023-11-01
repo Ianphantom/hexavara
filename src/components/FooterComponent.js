@@ -64,6 +64,7 @@ const FooterComponent = () => {
 const FooterComponentStyled = styled.div`
   padding: 60px 0px;
   background: white;
+  border-top: 1px solid var(--hxvr-neutral-40);
   .container {
     display: flex;
     flex-direction: column;
