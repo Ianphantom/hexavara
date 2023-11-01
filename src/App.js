@@ -11,6 +11,7 @@ import FooterComponent from "./components/FooterComponent";
 import WorkPagesIndex from "./pages/WorkPages/WorkPagesIndex";
 import AboutPagesIndex from "./pages/AboutPages/AboutPagesIndex";
 import LandingPagesIndex from "./pages/LandingPages/LandingPagesIndex";
+import WorkDetailPages from "./pages/WorkDetailPages/WorkDetailPages";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/works' element={<WorkPagesIndex />} />
         <Route exact path='/about' element={<AboutPagesIndex />} />
         <Route exact path='/home' element={<LandingPagesIndex />} />
+        <Route exact path='/works/:id' element={<WorkDetailPages />} />
       </Routes>
       <FooterComponent />
     </div>

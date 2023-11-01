@@ -85,6 +85,7 @@ const LandingPagesSectionEightStyled = styled.div`
     display: flex;
     align-items: center;
     gap: 42px;
+    width: 100%;
     .testimoni {
       width: 33%;
       padding: 32px 24px;
