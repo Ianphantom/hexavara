@@ -12,6 +12,7 @@ import WorkPagesIndex from "./pages/WorkPages/WorkPagesIndex";
 import AboutPagesIndex from "./pages/AboutPages/AboutPagesIndex";
 import LandingPagesIndex from "./pages/LandingPages/LandingPagesIndex";
 import WorkDetailPages from "./pages/WorkDetailPages/WorkDetailPages";
+import ProductPagesIndex from "./pages/ProductPages/ProductPagesIndex";
 
 function App() {
   return (
@@ -24,6 +25,12 @@ function App() {
         <Route exact path='/about' element={<AboutPagesIndex />} />
         <Route exact path='/home' element={<LandingPagesIndex />} />
         <Route exact path='/works/:id' element={<WorkDetailPages />} />
+        <Route exact path='/product' element={<ProductPagesIndex />} />
+        <Route
+          exact
+          path='/product/:id'
+          element={<div>For Now nothing here</div>}
+        />
       </Routes>
       <FooterComponent />
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // import component
 import ButtonComponent from "./ButtonComponent";
@@ -12,13 +12,22 @@ import caretDown from "../assets/svg/caretDown.svg";
 // import data
 import { dataProduct } from "../data/data-product";
 
-const ProductMenu = () => {
+const ProductMenu = ({ setShowProductMenu }) => {
+  const navigate = useNavigate();
   return (
-    <div className='product-sub-list show'>
+    <div
+      className='product-sub-list show'
+      onMouseEnter={() => setShowProductMenu(true)}
+      onMouseLeave={() => setShowProductMenu(false)}
+    >
       <div>
         <div className='row'>
           {dataProduct.map((item) => (
-            <ProductItemStyled className='col-md-6 pointer' key={item.id}>
+            <ProductItemStyled
+              className='col-md-6 pointer'
+              key={item.id}
+              onClick={() => navigate(`/product/${item.id}`)}
+            >
               <div className='logo-product'>
                 <img src={item.icon} alt={item.name} />
               </div>
@@ -39,6 +48,7 @@ const ProductMenu = () => {
 };
 
 const HeaderComponent = () => {
+  const navigate = useNavigate();
   const [showProductMenu, setShowProductMenu] = useState(0);
   return (
     <HeaderComponentStyled>
@@ -77,7 +87,8 @@ const HeaderComponent = () => {
               </Link>
               <div
                 className='paragraph-medium regular pointer'
-                onClick={() => setShowProductMenu(!showProductMenu)}
+                onMouseOver={() => setShowProductMenu(!showProductMenu)}
+                onClick={() => navigate("/product")}
               >
                 Products{" "}
                 <img
@@ -86,7 +97,14 @@ const HeaderComponent = () => {
                   className={`icon ${showProductMenu ? "rotate-180" : ""}`}
                 />
               </div>
-              {showProductMenu ? <ProductMenu /> : ""}
+              {showProductMenu ? (
+                <ProductMenu
+                  setShowProductMenu={setShowProductMenu}
+                  showProductMenu={showProductMenu}
+                />
+              ) : (
+                ""
+              )}
               <Link to={"/services"}>
                 <div className='paragraph-medium regular pointer'>Services</div>
               </Link>
@@ -171,6 +189,9 @@ const ProductItemStyled = styled.div`
   padding: 12px 16px;
   display: flex;
   gap: 24px;
+  &:hover {
+    background: var(--hxvr-neutral-40);
+  }
   .product-information {
     display: flex;
     flex-direction: column;
