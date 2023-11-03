@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import { dataProduct } from "../../data/data-product";
 
 const LandingPagesSectionFour = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <LandingPagesSectionFourStyled className='container'>
       <div className='product-title'>
@@ -14,7 +19,12 @@ const LandingPagesSectionFour = () => {
       </div>
       <div className='products-container'>
         {dataProduct.map((item) => (
-          <div className='product-container' key={item.id}>
+          <div
+            className='product-container'
+            key={item.id}
+            data-aos='zoom-out'
+            data-aos-duration='1500'
+          >
             <div className='icon'>
               <img src={item.icon} alt='product-icon' />
             </div>
@@ -83,6 +93,11 @@ const LandingPagesSectionFourStyled = styled.div`
         gap: 4px;
         color: var(--primary-base);
       }
+    }
+  }
+  @media (max-width: 768px) {
+    .products-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 `;

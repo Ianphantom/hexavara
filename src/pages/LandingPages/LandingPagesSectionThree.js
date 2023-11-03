@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import styled from "styled-components";
 
 const LandingPagesSectionThree = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <LandingPagesSectionThreeStyled>
       <div className='container'>
@@ -15,7 +20,12 @@ const LandingPagesSectionThree = () => {
             Take a sneak peak of our HQ
           </div>
         </div>
-        <div className='video-container'>
+
+        <div
+          className='video-container'
+          data-aos='zoom-in-up'
+          data-aos-duration='2500'
+        >
           <iframe
             title='HQ'
             src='https://www.youtube.com/embed/UC3PbMpkEtM'
@@ -56,7 +66,20 @@ const LandingPagesSectionThreeStyled = styled.div`
 
         margin: 0;
         width: 100%;
-        height: 521px;
+        height: 600px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      .text-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .title {
+          text-align: center;
+        }
       }
     }
   }

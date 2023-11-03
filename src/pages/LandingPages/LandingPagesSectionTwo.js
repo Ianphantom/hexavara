@@ -1,8 +1,12 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 const LandingPagesSectionTwo = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <LandingPagesSectionTwoStyled>
       <div className='left'>
@@ -14,21 +18,33 @@ const LandingPagesSectionTwo = () => {
         </div>
       </div>
       <div className='right'>
-        <div className='number-container'>
+        <div
+          className='number-container'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='number display-medium'>150+</div>
           <div className='desc paragraph-large regular'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
             mi. Aliquam in hendrerit urna.
           </div>
         </div>
-        <div className='number-container'>
+        <div
+          className='number-container'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='number display-medium'>150+</div>
           <div className='desc paragraph-large regular'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
             mi. Aliquam in hendrerit urna.
           </div>
         </div>
-        <div className='number-container'>
+        <div
+          className='number-container'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div className='number display-medium'>150+</div>
           <div className='desc paragraph-large regular'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
@@ -71,6 +87,16 @@ const LandingPagesSectionTwoStyled = styled.div`
     .number-container,
     .desc {
       color: var(--hxvr-neutral-30);
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .left {
+      position: static;
+      width: 100%;
+    }
+    .right {
+      width: 100%;
     }
   }
 `;

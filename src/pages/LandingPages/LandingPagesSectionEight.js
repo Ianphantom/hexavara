@@ -87,7 +87,6 @@ const LandingPagesSectionEightStyled = styled.div`
     gap: 42px;
     width: 100%;
     .testimoni {
-      width: 33%;
       padding: 32px 24px;
       border-radius: 8px;
       border: 1px solid var(--primary-40, #76acff);
@@ -99,6 +98,11 @@ const LandingPagesSectionEightStyled = styled.div`
         align-items: center;
         justify-content: space-between;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
     }
   }
 `;

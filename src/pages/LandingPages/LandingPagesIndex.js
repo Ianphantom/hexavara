@@ -20,7 +20,9 @@ const LandingPagesIndex = () => {
         <LandingPagesSectionTwo />
       </div>
       <LandingPagesSectionThree />
-      <LandingPagesSectionFour />
+      <div className='container'>
+        <LandingPagesSectionFour />
+      </div>
       <LandingPagesSectionFive />
       <LandingPagesSectionSix />
       <HappyClientComponent />

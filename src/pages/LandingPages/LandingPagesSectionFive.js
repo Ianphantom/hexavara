@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 const LandingPagesSectionFive = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <LandingPagesSectionFiveStyled>
       <div className='container'>
@@ -14,7 +19,11 @@ const LandingPagesSectionFive = () => {
           </div>
         </div>
         <div className='services-container'>
-          <div className='service-container'>
+          <div
+            className='service-container'
+            data-aos='fade-right'
+            data-aos-duration='300'
+          >
             <div className='icon'>
               <svg
                 width='20'
@@ -85,7 +94,12 @@ const LandingPagesSectionFive = () => {
               </div>
             </div>
           </div>
-          <div className='service-container'>
+          <div
+            className='service-container'
+            data-aos='fade-right'
+            data-aos-duration='300'
+            data-aos-delay='300'
+          >
             <div className='icon'>
               <svg
                 width='20'
@@ -156,7 +170,12 @@ const LandingPagesSectionFive = () => {
               </div>
             </div>
           </div>
-          <div className='service-container'>
+          <div
+            className='service-container'
+            data-aos='fade-right'
+            data-aos-duration='300'
+            data-aos-delay='600'
+          >
             <div className='icon'>
               <svg
                 width='20'
@@ -314,6 +333,11 @@ const LandingPagesSectionFiveStyled = styled.div`
       gap: 12px;
       color: var(--primary-base);
       text-decoration: underline;
+    }
+  }
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
     }
   }
 `;

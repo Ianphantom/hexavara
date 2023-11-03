@@ -16,7 +16,7 @@ const LandingPagesSectionSeven = () => {
       </div>
       <div className='projects-container'>
         <div className='left'>
-          <div className='project-container'>
+          <div className='project-container pointer'>
             <div className='image-container '>
               <img
                 className='small-image'
@@ -33,7 +33,7 @@ const LandingPagesSectionSeven = () => {
               Perusahaan MJA sebagai distributor Unilever.
             </div>
           </div>
-          <div className='project-container'>
+          <div className='project-container pointer'>
             <div className='image-container '>
               <img
                 src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
@@ -51,7 +51,7 @@ const LandingPagesSectionSeven = () => {
           </div>
         </div>
         <div className='right'>
-          <div className='project-container'>
+          <div className='project-container pointer'>
             <div className='image-container '>
               <img
                 src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
@@ -67,7 +67,7 @@ const LandingPagesSectionSeven = () => {
               Perusahaan MJA sebagai distributor Unilever.
             </div>
           </div>
-          <div className='project-container'>
+          <div className='project-container pointer'>
             <div className='image-container '>
               <img
                 className='small-image'
@@ -140,6 +140,12 @@ const LandingPagesSectionSevenStyled = styled.div`
   .all-project {
     display: flex;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+    }
   }
 `;
 

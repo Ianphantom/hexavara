@@ -169,7 +169,20 @@ const GlobalStyle = createGlobalStyle`
     a, a:hover, a:focus, a:active {
       text-decoration: none;
       color: inherit;
- }
+    }
+
+    @media (max-width: 576px) {
+        .display-large {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            font-weight: 600;
+        }
+        .paragraph-large{
+            font-size: 0.875rem;
+            line-height:1.25rem;
+            font-weight: 600;
+        }
+  }
     
 `;
 
