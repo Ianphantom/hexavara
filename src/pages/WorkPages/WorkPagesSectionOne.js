@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const WorkPagesSectionOne = () => {
   return (
-    <WorkPagesSectionOneStyled className='container'>
-      <div className='title display-large'>Our Work</div>
-      <div className='desc paragraph-large regular'>
+    <WorkPagesSectionOneStyled className="container">
+      <div className="title display-large">Our Work</div>
+      <div className="desc paragraph-large regular">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
         Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
         mattis ligula consectetur, ultrices mauris.

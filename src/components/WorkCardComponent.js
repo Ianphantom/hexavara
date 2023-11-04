@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 // import component
@@ -8,23 +10,30 @@ import TagComponent from "./TagComponent";
 import ArrowRight from "../assets/svg/arrowRight.svg";
 
 const WorkCardComponent = ({ tag, title, desc, theme }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <WorkCardComponentStyled className={`pointer ${theme}`}>
+    <WorkCardComponentStyled
+      className={`pointer ${theme}`}
+      data-aos="zoom-out"
+      data-aos-duration="1500"
+    >
       <img
         src={`https://source.unsplash.com/random/200x200?sig=${Math.random()}`}
-        alt='project-icon'
-        className='image-container border-radius-large'
+        alt="project-icon"
+        className="image-container border-radius-large"
       />
 
-      <div className='information'>
-        <TagComponent text={tag} theme='primary' />
+      <div className="information">
+        <TagComponent text={tag} theme="primary" />
 
-        <div className='title paragraph-large'>{title}</div>
-        <div className='description paragraph-medium regular'>{desc}</div>
+        <div className="title paragraph-large">{title}</div>
+        <div className="description paragraph-medium regular">{desc}</div>
 
-        <div className='read-more paragraph-large'>
+        <div className="read-more paragraph-large">
           <span>
-            Read more <img src={ArrowRight} alt='arrow-right' />
+            Read more <img src={ArrowRight} alt="arrow-right" />
           </span>
         </div>
       </div>
@@ -44,6 +53,14 @@ const WorkCardComponentStyled = styled.div`
   &.small {
     .image-container {
       height: 137px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &.small-medium {
+    .image-container {
+      height: 160px;
       width: 100%;
       object-fit: cover;
     }
