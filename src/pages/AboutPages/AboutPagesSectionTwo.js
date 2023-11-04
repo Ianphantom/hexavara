@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 const AboutPagesSectionTwo = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <AboutPagesSectionTwoStyled>
+    <AboutPagesSectionTwoStyled data-aos='fade-up' data-aos-duration='1500'>
       <div className='container'>
         <div className='title display-medium'>
           "The best idea is comprehensive solution"
@@ -22,6 +27,9 @@ const AboutPagesSectionTwo = () => {
           </div>
           <div className='image-container'>
             <img
+              data-aos='zoom-in'
+              data-aos-duration='1500'
+              data-aos-delay='750'
               src='https://blog.slido.com/wp-content/uploads/2022/09/slido-blog-cover-1600x1066px-1.jpg'
               alt='culture'
             />

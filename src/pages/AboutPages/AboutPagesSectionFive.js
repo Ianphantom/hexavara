@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 // import images
@@ -6,11 +8,14 @@ import founder1 from "../../assets/images/founder-1.png";
 import founder2 from "../../assets/images/founder-2.png";
 
 const AboutPagesSectionFive = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <AboutPagesSectionFiveStyled className='container'>
       <div className='title text-center display-small'>Meet Our Key Team</div>
       <div className='team-container'>
-        <ProfileContainerStyled>
+        <ProfileContainerStyled data-aos='fade-up' data-aos-duration='1000'>
           <img src={founder1} alt='team-profile' />
 
           <div className='information'>
@@ -25,7 +30,7 @@ const AboutPagesSectionFive = () => {
             </div>
           </div>
         </ProfileContainerStyled>
-        <ProfileContainerStyled>
+        <ProfileContainerStyled data-aos='fade-up' data-aos-duration='1000'>
           <img src={founder2} alt='team-profile' />
 
           <div className='information'>
