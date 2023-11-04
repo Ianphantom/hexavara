@@ -73,7 +73,7 @@ const FooterComponentStyled = styled.div`
     .top-footer {
       display: flex;
       gap: 64px;
-      align-items: flex-start;
+      align-items: flex-end;
       .company-information {
         img {
           margin-bottom: 24px;
@@ -88,7 +88,7 @@ const FooterComponentStyled = styled.div`
       }
       .addresses {
         display: flex;
-        align-items: flex-start;
+        align-items: flex-end;
         gap: 32px;
         .address {
           .address-name {
