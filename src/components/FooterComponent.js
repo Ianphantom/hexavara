@@ -9,50 +9,52 @@ import linkedinSocialMedia from "../assets/svg/linkedinSocialMedia.svg";
 const FooterComponent = () => {
   return (
     <FooterComponentStyled>
-      <div className='container'>
-        <div className='top-footer'>
-          <div className='company-information'>
-            <img src={hexavaraLogoHeader} alt='Hexavara Logo' />
-            <div className='company-name paragraph-large'>
-              PT. Hexavara Nawasena.
-            </div>
-            <div className='contact-us paragraph-medium regular'>
-              Contact us on <u>hexavara@gmail.com</u>, <u>admin@hexavara.com</u>{" "}
-              or
-              <u>+62123456789</u>
-            </div>
+      <div className="container">
+        <div className="top-footer">
+          <div className="company-information">
+            <img src={hexavaraLogoHeader} alt="Hexavara Logo" />
           </div>
-          <div className='addresses'>
-            <div className='address address-one'>
-              <div className='address-name paragraph-large'>Jakarta</div>
-              <div className='address-location paragraph-medium regular'>
+          <div className="addresses">
+            <div>
+              <div className="company-name paragraph-large">
+                PT. Hexavara Nawasena.
+              </div>
+              <div className="contact-us paragraph-medium regular">
+                Contact us on <u>hexavara@gmail.com</u>,{" "}
+                <u>admin@hexavara.com</u> or
+                <u>+62123456789</u>
+              </div>
+            </div>
+            <div className="address address-one">
+              <div className="address-name paragraph-large">Jakarta</div>
+              <div className="address-location paragraph-medium regular">
                 Menara Duta Wing A Lantai 7, Jl. H. R. Rasuna Said Kuningan,
                 South Jakarta City, Jakarta 12910
               </div>
             </div>
-            <div className='address address-two'>
-              <div className='address-name paragraph-large'>Surabaya</div>
-              <div className='address-location paragraph-medium regular'>
+            <div className="address address-two">
+              <div className="address-name paragraph-large">Surabaya</div>
+              <div className="address-location paragraph-medium regular">
                 Jl. Ngaglik 50, Kec. Tambaksari, Surabaya, Jawa Timur 60136
               </div>
             </div>
           </div>
         </div>
         <hr />
-        <div className='bottom-footer'>
-          <div className='copyright paragraph-medium regular'>
+        <div className="bottom-footer">
+          <div className="copyright paragraph-medium regular">
             ©2023 Hexavara Technology. All Rights Reserved.
           </div>
-          <div className='social-media'>
+          <div className="social-media">
             <img
-              className='pointer'
+              className="pointer"
               src={linkedinSocialMedia}
-              alt='Linkedin-social-media'
+              alt="Linkedin-social-media"
             />
             <img
-              className='pointer'
+              className="pointer"
               src={instagramSocialMedia}
-              alt='instagram-social-media'
+              alt="instagram-social-media"
             />
           </div>
         </div>
@@ -71,8 +73,8 @@ const FooterComponentStyled = styled.div`
 
     .top-footer {
       display: flex;
-      gap: 64px;
-      align-items: flex-end;
+      gap: 24px;
+      flex-direction: column;
       .company-information {
         img {
           margin-bottom: 24px;
@@ -87,7 +89,7 @@ const FooterComponentStyled = styled.div`
       }
       .addresses {
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
         gap: 32px;
         .address {
           .address-name {
