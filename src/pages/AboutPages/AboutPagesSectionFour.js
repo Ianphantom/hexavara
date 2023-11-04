@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 const AboutPagesSectionFour = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <AboutPagesSectionFourStyled>
       <div className='container'>
@@ -9,7 +14,7 @@ const AboutPagesSectionFour = () => {
           Our General Work Scheme
         </div>
         <div className='step-container'>
-          <div className='step-item'>
+          <div className='step-item' data-aos='fade-right'>
             <div className='step-number paragraph-medium'>Step 1</div>
             <div className='step-title paragraph-large'>
               Requirement Gathering
@@ -19,7 +24,7 @@ const AboutPagesSectionFour = () => {
               massa mi. Aliquam in hendrerit urna.
             </div>
           </div>
-          <div className='arrow'>
+          <div className='arrow' data-aos='fade-right' data-aos-delay='100'>
             <svg
               width='27'
               height='23'
@@ -38,7 +43,7 @@ const AboutPagesSectionFour = () => {
             </svg>
           </div>
 
-          <div className='step-item'>
+          <div className='step-item' data-aos='fade-right' data-aos-delay='200'>
             <div className='step-number paragraph-medium'>Step 2</div>
             <div className='step-title paragraph-large'>Problem Analysis</div>
             <div className='step-desc paragraph-medium regular'>
@@ -46,7 +51,7 @@ const AboutPagesSectionFour = () => {
               massa mi. Aliquam in hendrerit urna.
             </div>
           </div>
-          <div className='arrow'>
+          <div className='arrow' data-aos='fade-right' data-aos-delay='300'>
             <svg
               width='27'
               height='23'
@@ -64,7 +69,7 @@ const AboutPagesSectionFour = () => {
               />
             </svg>
           </div>
-          <div className='step-item'>
+          <div className='step-item' data-aos='fade-right' data-aos-delay='400'>
             <div className='step-number paragraph-medium'>Step 3</div>
             <div className='step-title paragraph-large'>Planning</div>
             <div className='step-desc paragraph-medium regular'>
@@ -152,7 +157,7 @@ const AboutPagesSectionFour = () => {
               </div>
             </div>
           </div>
-          <div className='arrow'>
+          <div className='arrow' data-aos='fade-right' data-aos-delay='500'>
             <svg
               width='27'
               height='23'
@@ -170,7 +175,7 @@ const AboutPagesSectionFour = () => {
               />
             </svg>
           </div>
-          <div className='step-item'>
+          <div className='step-item' data-aos='fade-right' data-aos-delay='600'>
             <div className='step-number paragraph-medium'>Step 2</div>
             <div className='step-title paragraph-large'>Developing</div>
             <div className='step-desc paragraph-medium regular'>

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 // import images
@@ -11,11 +13,18 @@ import inside6 from "../../assets/images/inside-6.png";
 import inside7 from "../../assets/images/inside-7.png";
 
 const AboutPagesSectionSix = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <AboutPagesSectionSixStyled>
       <div className='title display-medium container'>Inside Hexavara</div>
       <div className='images-container'>
-        <div className='top inside-container'>
+        <div
+          className='top inside-container'
+          data-aos='zoom-out-right'
+          data-aos-duration='500'
+        >
           <div className='image-container width-15'>
             <img className='border-right' src={inside1} alt='team' />
           </div>
@@ -29,7 +38,11 @@ const AboutPagesSectionSix = () => {
             <img className='border-left' src={inside4} alt='team' />
           </div>
         </div>
-        <div className='top inside-container'>
+        <div
+          className='top inside-container'
+          data-aos='zoom-out-left'
+          data-aos-duration='500'
+        >
           <div className='image-container width-10'>
             <img className='border-right' src={inside5} alt='team' />
           </div>

@@ -11,7 +11,7 @@ const AboutPagesSectionThree = () => {
       <div className='paragraph-container'>
         <div className='paragraph-card border-radius-medium'>
           <InformationParagraphComponent
-            text1='50+'
+            text1='50'
             text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
             text1Config='display-medium'
             theme='primary'
@@ -19,7 +19,7 @@ const AboutPagesSectionThree = () => {
         </div>
         <div className='paragraph-card border-radius-medium'>
           <InformationParagraphComponent
-            text1='150+'
+            text1='150'
             text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
             text1Config='display-medium'
             theme='primary'
@@ -27,7 +27,7 @@ const AboutPagesSectionThree = () => {
         </div>
         <div className='paragraph-card border-radius-medium'>
           <InformationParagraphComponent
-            text1='60+'
+            text1='60'
             text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
             text1Config='display-medium'
             theme='primary'

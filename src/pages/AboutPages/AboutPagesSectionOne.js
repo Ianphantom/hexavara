@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
+import TypeWriter from "typewriter-effect";
 
 const AboutPagesSectionOne = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <AboutPagesSectionOneStyled className='container'>
       <div className='title display-xlarge'>
-        Hi, we are <span>Hexavara Tech.</span>
+        <div>Hi, we are</div>
+        <div>
+          <TypeWriter
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 40,
+              strings: [" Hexavara Tech."],
+            }}
+          />
+        </div>
       </div>
       <div className='desc paragraph-large regular'>
         in 2016, Hexavara Technology is dedicated to developing tailored
@@ -24,6 +40,8 @@ const AboutPagesSectionOneStyled = styled.div`
   flex-direction: column;
   gap: 32px;
   .title {
+    display: flex;
+    gap: 15px;
     color: var(--hxvr-neutral-100);
     span {
       color: var(--primary-base);
@@ -33,6 +51,11 @@ const AboutPagesSectionOneStyled = styled.div`
 
   .desc {
     color: var(--hxvr-neutral-secondary);
+  }
+  @media (max-width: 992px) {
+    .title {
+      flex-direction: column;
+    }
   }
 `;
 

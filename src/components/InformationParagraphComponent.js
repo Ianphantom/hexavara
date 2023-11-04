@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { CountUp } from "use-count-up";
+import VisibilitySensor from "react-visibility-sensor";
 
 const InformationParagraphComponent = ({
   text1,
@@ -7,9 +9,29 @@ const InformationParagraphComponent = ({
   text1Config,
   theme,
 }) => {
+  console.log("isNan" + isNaN(text1));
   return (
     <InformationParagraphComponentStyled className={theme}>
-      <div className={text1Config}>{text1}</div>
+      <div className={text1Config}>
+        {isNaN(parseInt(text1)) ? (
+          <>{text1}</>
+        ) : (
+          <VisibilitySensor>
+            {({ isVisible }) => {
+              return (
+                <div>
+                  <CountUp
+                    isCounting={isVisible}
+                    key={isVisible}
+                    end={parseInt(text1)}
+                    duration={3.2}
+                  />
+                </div>
+              );
+            }}
+          </VisibilitySensor>
+        )}
+      </div>
       <div>{text2}</div>
     </InformationParagraphComponentStyled>
   );
