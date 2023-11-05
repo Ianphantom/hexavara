@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 // immport component
@@ -9,23 +11,43 @@ import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
 import jumbotron from "../../assets/images/jumbotron.png";
 
 const ProductPagesSectionOne = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <ProductPagesSectionOneStyled>
       <div className='container'>
-        <div className='title display-large'>
+        <div
+          className='title display-large'
+          data-aos='fade-right'
+          data-aos-duration='1500'
+        >
           Make your business more efficient with our technology.
         </div>
+
         <div className='desc paragraph-medium regular'>
           Lorem ipsum lor dolor calamet Lorem ipsum lor dolor calametLorem ipsum
           lor dolor calametLorem ipsum lor dolor calametLorem ipsum lor dolor
           calamet.
         </div>
+
         <div className='button-cta-container'>
           <ButtonComponent
             text='Talk to Us'
             icon={arrowUpRight}
             className='button filled-secondary border-radius-4 pointer paragraph-large'
+            data-aos='fade-right'
+            data-aos-duration='1500'
+            data-aos-delay='300'
           />
+          <div
+            className='works paragraph-large pointer'
+            data-aos='fade-right'
+            data-aos-duration='1500'
+            data-aos-delay='500'
+          >
+            Check our works
+          </div>
         </div>
       </div>
     </ProductPagesSectionOneStyled>
@@ -50,9 +72,9 @@ const ProductPagesSectionOneStyled = styled.div`
       margin-bottom: 32px;
     }
     .desc {
-      color: var(--hxvr-neutral-30);
-      width: 75%;
       margin-bottom: 32px;
+      width: 75%;
+      color: var(--hxvr-neutral-30);
     }
     .button-cta-container {
       display: flex;
@@ -63,6 +85,19 @@ const ProductPagesSectionOneStyled = styled.div`
         color: var(--hxvr-neutral-30);
         text-decoration: underline;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      .title {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      padding: 100px 0px;
+      width: 90%;
     }
   }
 `;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
-import { dataProduct } from "../../data/data-services";
+import { dataService } from "../../data/data-services";
 
 const ServicePagesSectionFour = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const ServicePagesSectionFour = () => {
         </div>
       </div>
       <div className='products-container'>
-        {dataProduct.map((item) => (
+        {dataService.map((item) => (
           <div
             className='product-container'
             key={item.id}

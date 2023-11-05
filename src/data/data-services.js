@@ -7,7 +7,7 @@ import ruangTemu from "../assets/images/ruang-temu.png";
 import inventoryManagementSystem from "../assets/images/inventory-management-system.png";
 import systemPemesananJasa from "../assets/images/sistem-pemesanan-jasa.png";
 
-export const dataProduct = [
+export const dataService = [
   {
     id: 1,
     name: "Web Development",
