@@ -4,6 +4,7 @@ import ProductPagesSectionOne from "./ProductPagesSectionOne";
 import ProductPagesSectionTwo from "./ProductPagesSectionTwo";
 import ProductPagesSectionThree from "./ProductPagesSectionThree";
 import ProductPagesSectionFour from "./ProductPagesSectionFour";
+import ProductPagesSectionFive from "./ProductPagesSectionFive";
 import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
 
@@ -14,6 +15,7 @@ const ProductPagesIndex = () => {
       <ProductPagesSectionTwo />
       <ProductPagesSectionThree />
       <ProductPagesSectionFour />
+      <ProductPagesSectionFive />
       <HappyClientComponent />
       <CTASectionComponent
         title='Interested?'
