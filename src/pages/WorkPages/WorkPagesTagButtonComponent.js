@@ -1,10 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const WorkPagesTagButtonComponent = ({ text, setTagActive, tagActive }) => {
+const WorkPagesTagButtonComponent = ({
+  text,
+  setTagActive,
+  tagActive,
+  theme,
+}) => {
   return (
     <WorkPagesTagButtonComponentStyled
-      className={`pointer ${tagActive === text ? "active" : ""}`}
+      className={`pointer ${theme} ${tagActive === text ? "active" : ""}`}
       onClick={() => setTagActive(text)}
     >
       <div className='text paragraph-large regular'>{text}</div>
@@ -26,6 +31,21 @@ const WorkPagesTagButtonComponentStyled = styled.div`
   .text {
     color: var(--hxvr-brand-70);
     width: max-content;
+  }
+  &.outlined-normal {
+    background: rgba(252, 252, 252, 1);
+    border-radius: 36px;
+    border: 1px solid var(--hxvr-neutral-70, #b5b5b5);
+    .text {
+      color: var(--hxvr-neutral-80);
+    }
+  }
+  &.outlined-normal.active {
+    border-radius: 36px;
+    border: 1px solid var(--hxvr-brand-70, #3182ff);
+    .text {
+      color: var(--hxvr-brand-70, #3182ff);
+    }
   }
 `;
 

@@ -110,10 +110,12 @@ const HeaderComponent = () => {
               </Link>
             </div>
             <div className='button-container'>
-              <ButtonComponent
-                text='Start a Project?'
-                className='button filled-primary border-radius-medium pointer'
-              />
+              <Link to={"/contact"}>
+                <ButtonComponent
+                  text='Start a Project?'
+                  className='button filled-primary border-radius-medium pointer'
+                />
+              </Link>
             </div>
           </div>
         </nav>

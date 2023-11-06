@@ -14,6 +14,7 @@ import LandingPagesIndex from "./pages/LandingPages/LandingPagesIndex";
 import WorkDetailPages from "./pages/WorkDetailPages/WorkDetailPages";
 import ProductPagesIndex from "./pages/ProductPages/ProductPagesIndex";
 import ServicePagesIndex from "./pages/ServicePages/ServicePagesIndex";
+import ContactUsPagesIndex from "./pages/ContactUsPages/ContactUsPagesIndex";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path='/works/:id' element={<WorkDetailPages />} />
         <Route exact path='/product' element={<ProductPagesIndex />} />
         <Route exact path='/services' element={<ServicePagesIndex />} />
+        <Route exact path='/contact' element={<ContactUsPagesIndex />} />
         <Route
           exact
           path='/product/:id'
