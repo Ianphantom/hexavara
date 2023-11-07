@@ -110,12 +110,13 @@ const ServicePagesSectionThree = () => {
 };
 
 const ServicePagesSectionThreeStyled = styled.div`
-  padding: 80px 80px;
+  padding: 80px 0px;
   background: var(--primary-base);
   .container {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
     .title {
       color: var(--primary-10);
     }

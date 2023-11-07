@@ -182,6 +182,12 @@ const GlobalStyle = createGlobalStyle`
             line-height:1.25rem;
             font-weight: 600;
         }
+
+        .heading-large{
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+            font-weight: 600;
+        }
   }
     
 `;
