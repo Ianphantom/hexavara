@@ -139,8 +139,9 @@ const ServicePagesSectionThreeStyled = styled.div`
           }
         }
         .bottom {
+          width: 100%;
           img {
-            width: 100%;
+            min-width: 100%;
             border-radius: 0px 0px 12px 12px;
             height: 196px;
             object-fit: cover;
