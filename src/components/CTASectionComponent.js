@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ButtonComponent from "./ButtonComponent";
 import arrowUpRight from "../assets/svg/arrowUpRight.svg";
+import { Link } from "react-router-dom";
 
 const CTASectionComponent = ({ title, desc }) => {
   return (
@@ -15,15 +16,19 @@ const CTASectionComponent = ({ title, desc }) => {
         )}
 
         <div className='button-container'>
-          <ButtonComponent
-            text='Talk to Us'
-            icon={arrowUpRight}
-            className='button filled-secondary border-radius-4 pointer paragraph-large'
-          ></ButtonComponent>
-          <ButtonComponent
-            text='Check Our Works'
-            className='button outlined-secondary border-radius-4 pointer paragraph-large'
-          ></ButtonComponent>
+          <Link to='/contact'>
+            <ButtonComponent
+              text='Talk to Us'
+              icon={arrowUpRight}
+              className='button filled-secondary border-radius-4 pointer paragraph-large'
+            ></ButtonComponent>
+          </Link>
+          <Link to='/works'>
+            <ButtonComponent
+              text='Check Our Works'
+              className='button outlined-secondary border-radius-4 pointer paragraph-large'
+            ></ButtonComponent>
+          </Link>
         </div>
       </div>
     </CTASectionComponentStyled>

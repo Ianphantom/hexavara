@@ -9,10 +9,12 @@ import WorkDetailPagesSectionSix from "./WorkDetailPagesSectionSix";
 import WorkDetailPagesSectionSeven from "./WorkDetailPagesSectionSeven";
 import CTASectionComponent from "../../components/CTASectionComponent";
 import WorkDetailPagesSectionEight from "./WorkDetailPagesSectionEight";
+import ScrollTop from "../../components/ScrollTop";
 
 const WorkDetailPages = () => {
   return (
     <div>
+      <ScrollTop />
       <WorkDetailPagesSectionOne />
       <WorkDetailPagesSectionTwo />
       <WorkDetailPagesSectionThree />

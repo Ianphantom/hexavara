@@ -15,6 +15,7 @@ import WorkDetailPages from "./pages/WorkDetailPages/WorkDetailPages";
 import ProductPagesIndex from "./pages/ProductPages/ProductPagesIndex";
 import ServicePagesIndex from "./pages/ServicePages/ServicePagesIndex";
 import ContactUsPagesIndex from "./pages/ContactUsPages/ContactUsPagesIndex";
+import FloatingButton from "./components/FloatingButton";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           element={<div>For Now nothing here</div>}
         />
       </Routes>
+      <FloatingButton />
       <FooterComponent />
     </div>
   );

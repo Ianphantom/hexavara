@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import WorkPagesTagButtonComponent from "../WorkPages/WorkPagesTagButtonComponent";
 import ButtonComponent from "../../components/ButtonComponent";
+import ScrollTop from "../../components/ScrollTop";
 
 const dataCategory = [
   "Web Development",
@@ -43,6 +44,7 @@ const ContactUsPagesIndex = () => {
   const [tagBudgetActive, setTagBudgetActive] = useState(["All"]);
   return (
     <ContactUsPagesIndexStyled>
+      <ScrollTop />
       <div className='container'>
         <div className='section-one'>
           <div className='title'>

@@ -9,6 +9,7 @@ import ButtonComponent from "../../components/ButtonComponent";
 // import icon
 import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
 import jumbotron from "../../assets/images/jumbotron.png";
+import { Link } from "react-router-dom";
 
 const LandingPagesSectionOne = () => {
   useEffect(() => {
@@ -26,22 +27,26 @@ const LandingPagesSectionOne = () => {
         </div>
 
         <div className='button-cta-container'>
-          <ButtonComponent
-            text='Talk to Us'
-            icon={arrowUpRight}
-            className='button filled-secondary border-radius-4 pointer paragraph-large'
-            data-aos='fade-right'
-            data-aos-duration='1500'
-            data-aos-delay='300'
-          />
-          <div
-            className='works paragraph-large pointer'
-            data-aos='fade-right'
-            data-aos-duration='1500'
-            data-aos-delay='500'
-          >
-            Check our works
-          </div>
+          <Link to='/contact'>
+            <ButtonComponent
+              text='Talk to Us'
+              icon={arrowUpRight}
+              className='button filled-secondary border-radius-4 pointer paragraph-large'
+              data-aos='fade-right'
+              data-aos-duration='1500'
+              data-aos-delay='300'
+            />
+          </Link>
+          <Link to='/works'>
+            <div
+              className='works paragraph-large pointer'
+              data-aos='fade-right'
+              data-aos-duration='1500'
+              data-aos-delay='500'
+            >
+              Check our works
+            </div>
+          </Link>
         </div>
       </div>
     </LandingPagesSectionOneStyled>
