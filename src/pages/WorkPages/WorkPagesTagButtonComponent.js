@@ -6,11 +6,27 @@ const WorkPagesTagButtonComponent = ({
   setTagActive,
   tagActive,
   theme,
+  isMultiSelect = false,
 }) => {
+  const onClickHandler = () => {
+    let newData;
+    if (isMultiSelect) {
+      if (tagActive.includes(text)) {
+        newData = tagActive.filter((item) => item !== text);
+      } else {
+        newData = [...tagActive, text];
+      }
+    } else {
+      newData = text;
+    }
+    setTagActive(newData);
+    console.log(newData);
+  };
+
   return (
     <WorkPagesTagButtonComponentStyled
-      className={`pointer ${theme} ${tagActive === text ? "active" : ""}`}
-      onClick={() => setTagActive(text)}
+      className={`pointer ${theme} ${tagActive.includes(text) ? "active" : ""}`}
+      onClick={onClickHandler}
     >
       <div className='text paragraph-large regular'>{text}</div>
     </WorkPagesTagButtonComponentStyled>

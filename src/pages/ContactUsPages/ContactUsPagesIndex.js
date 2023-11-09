@@ -39,7 +39,8 @@ const ContactUsPagesIndex = () => {
     console.log(event.target.files[0]);
     setFileIssChoosen(event.target.files[0].name);
   };
-  const [tagActive, setTagActive] = useState("All");
+  const [tagActive, setTagActive] = useState(["All"]);
+  const [tagBudgetActive, setTagBudgetActive] = useState(["All"]);
   return (
     <ContactUsPagesIndexStyled>
       <div className='container'>
@@ -122,6 +123,7 @@ const ContactUsPagesIndex = () => {
                 tagActive={tagActive}
                 setTagActive={setTagActive}
                 theme='outlined-normal'
+                isMultiSelect={true}
               />
               {dataCategory.map((item, index) => (
                 <WorkPagesTagButtonComponent
@@ -130,6 +132,7 @@ const ContactUsPagesIndex = () => {
                   tagActive={tagActive}
                   setTagActive={setTagActive}
                   theme='outlined-normal'
+                  isMultiSelect={true}
                 />
               ))}
             </div>
@@ -143,8 +146,8 @@ const ContactUsPagesIndex = () => {
                 <WorkPagesTagButtonComponent
                   key={index}
                   text={item}
-                  tagActive={tagActive}
-                  setTagActive={setTagActive}
+                  tagActive={tagBudgetActive}
+                  setTagActive={setTagBudgetActive}
                   theme='outlined-normal'
                 />
               ))}
