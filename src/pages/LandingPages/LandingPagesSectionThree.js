@@ -60,13 +60,15 @@ const LandingPagesSectionThreeStyled = styled.div`
     }
 
     .video-container {
-      padding: 0px;
+      padding: 0px 0px;
+      height: 600px;
       iframe {
         border-radius: 24px 24px 0px 0px;
-
-        margin: 0;
+        padding: 0px 0px;
+        margin: 0px 0px;
         width: 100%;
         height: 600px;
+        border: none;
       }
     }
   }

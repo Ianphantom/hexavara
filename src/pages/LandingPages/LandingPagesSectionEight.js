@@ -12,6 +12,7 @@ const LandingPagesSectionEight = () => {
           What they say about us
         </div>
       </div>
+
       <div className='testimonial-container'>
         <div className='testimoni'>
           <div className='desc paragraph-medium regular'>

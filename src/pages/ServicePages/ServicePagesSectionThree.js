@@ -11,7 +11,7 @@ const ServicePagesSectionThree = () => {
   return (
     <ServicePagesSectionThreeStyled>
       <div className='container'>
-        <div className='title heading-large text-center'>Our Service</div>
+        <div className='title heading-large text-center'>Our Services</div>
         <div className='services-container'>
           <div className='service-container pointer'>
             <div className='top'>

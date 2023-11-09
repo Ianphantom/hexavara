@@ -248,7 +248,7 @@ const LandingPagesSectionFive = () => {
           </div>
         </div>
         <div className='more'>
-          <div className='paragraph-medium'>Learn More</div>
+          <div className='paragraph-medium'>See More</div>
           <svg
             width='20'
             height='16'

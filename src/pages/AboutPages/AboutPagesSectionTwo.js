@@ -59,13 +59,13 @@ const AboutPagesSectionTwoStyled = styled.div`
       }
       .image-container {
         width: 50%;
-        height: 544px;
+        height: 456px;
         position: relatives;
         img {
           position: absolute;
           border-radius: 24px 0px 0px 0px;
           right: 0;
-          height: 624px;
+          height: 536px;
           width: 50%;
         }
       }

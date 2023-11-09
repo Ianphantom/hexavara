@@ -112,7 +112,7 @@ const ContactUsPagesIndex = () => {
           <textarea
             name='about project'
             className='paragraph-medium regular'
-            defaultValue='Tell us more about the project you want to realize'
+            placeholder='Tell us more about the project you want to realize'
           />
           <div className='section-tag'>
             <div className='title heading-small'>Choose the category</div>
