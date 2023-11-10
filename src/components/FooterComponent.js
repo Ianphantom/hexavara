@@ -1,61 +1,72 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 // import images assets
-import hexavaraLogoHeader from "../assets/images/hexavara_header.png";
-import instagramSocialMedia from "../assets/svg/instagramSocialMedia.svg";
-import linkedinSocialMedia from "../assets/svg/linkedinSocialMedia.svg";
+import hexavaraLogoHeader from '../assets/images/hexavara_header.png';
+import instagramSocialMedia from '../assets/svg/instagramSocialMedia.svg';
+import linkedinSocialMedia from '../assets/svg/linkedinSocialMedia.svg';
+import { Link } from 'react-router-dom';
 
 const FooterComponent = () => {
   return (
     <FooterComponentStyled>
-      <div className="container">
-        <div className="top-footer">
-          <div className="company-information">
-            <img src={hexavaraLogoHeader} alt="Hexavara Logo" />
+      <div className='container'>
+        <div className='top-footer'>
+          <div className='company-information'>
+            <img src={hexavaraLogoHeader} alt='Hexavara Logo' />
           </div>
-          <div className="addresses">
+          <div className='addresses'>
             <div>
-              <div className="company-name paragraph-large">
+              <div className='company-name paragraph-large'>
                 PT. Hexavara Nawasena.
               </div>
-              <div className="contact-us paragraph-medium regular">
-                Contact us on <u>hexavara@gmail.com</u>,{" "}
+              <div className='contact-us paragraph-medium regular'>
+                Contact us on <u>hexavara@gmail.com</u>,{' '}
                 <u>admin@hexavara.com</u> or
                 <u>+62123456789</u>
               </div>
             </div>
-            <div className="address address-one">
-              <div className="address-name paragraph-large">Jakarta</div>
-              <div className="address-location paragraph-medium regular">
+            <div className='address address-one'>
+              <div className='address-name paragraph-large'>Jakarta</div>
+              <div className='address-location paragraph-medium regular'>
                 Menara Duta Wing A Lantai 7, Jl. H. R. Rasuna Said Kuningan,
                 South Jakarta City, Jakarta 12910
               </div>
             </div>
-            <div className="address address-two">
-              <div className="address-name paragraph-large">Surabaya</div>
-              <div className="address-location paragraph-medium regular">
+            <div className='address address-two'>
+              <div className='address-name paragraph-large'>Surabaya</div>
+              <div className='address-location paragraph-medium regular'>
                 Jl. Ngaglik 50, Kec. Tambaksari, Surabaya, Jawa Timur 60136
               </div>
             </div>
           </div>
         </div>
         <hr />
-        <div className="bottom-footer">
-          <div className="copyright paragraph-medium regular">
+        <div className='bottom-footer'>
+          <div className='copyright paragraph-medium regular'>
             ©2023 Hexavara Technology. All Rights Reserved.
           </div>
-          <div className="social-media">
-            <img
-              className="pointer"
-              src={linkedinSocialMedia}
-              alt="Linkedin-social-media"
-            />
-            <img
-              className="pointer"
-              src={instagramSocialMedia}
-              alt="instagram-social-media"
-            />
+          <div className='social-media'>
+            <a
+              href='https://www.instagram.com/hexavara/'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <img
+                className='pointer'
+                src={instagramSocialMedia}
+                alt='instagram-social-media'
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/company/hexavara-technology/'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <img
+                className='pointer'
+                src={linkedinSocialMedia}
+                alt='Linkedin-social-media'
+              />
+            </a>
           </div>
         </div>
       </div>
