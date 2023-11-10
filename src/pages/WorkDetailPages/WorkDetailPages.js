@@ -9,6 +9,7 @@ import WorkDetailPagesSectionSix from "./WorkDetailPagesSectionSix";
 import WorkDetailPagesSectionSeven from "./WorkDetailPagesSectionSeven";
 import CTASectionComponent from "../../components/CTASectionComponent";
 import WorkDetailPagesSectionEight from "./WorkDetailPagesSectionEight";
+import WorkDetailTestimoniImage from "./WorkDetailTestimoniImage";
 import ScrollTop from "../../components/ScrollTop";
 
 const WorkDetailPages = () => {
@@ -24,6 +25,7 @@ const WorkDetailPages = () => {
       <WorkDetailPagesSectionSeven />
       <CTASectionComponent title='Empower your team and build a product your users love.' />
       <WorkDetailPagesSectionEight />
+      <WorkDetailTestimoniImage />
     </div>
   );
 };
