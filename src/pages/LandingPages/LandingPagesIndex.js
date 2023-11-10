@@ -11,10 +11,12 @@ import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
 import LandingPagesSectionSeven from "./LandingPagesSectionSeven";
 import LandingPagesSectionEight from "./LandingPagesSectionEight";
+import ScrollTop from "../../components/ScrollTop";
 
 const LandingPagesIndex = () => {
   return (
     <div>
+	  <ScrollTop/>
       <LandingPagesSectionOne />
       <div className='container'>
         <LandingPagesSectionTwo />

@@ -7,10 +7,12 @@ import ProductPagesSectionFour from "./ProductPagesSectionFour";
 import ProductPagesSectionFive from "./ProductPagesSectionFive";
 import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
+import ScrollTop from "../../components/ScrollTop";
 
 const ProductPagesIndex = () => {
   return (
     <div>
+	  <ScrollTop/>
       <ProductPagesSectionOne />
       <ProductPagesSectionTwo />
       <ProductPagesSectionThree />
