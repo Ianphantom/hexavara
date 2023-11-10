@@ -9,10 +9,12 @@ import AboutPagesSectionThree from "./AboutPagesSectionThree";
 import AboutPagesSectionFour from "./AboutPagesSectionFour";
 import AboutPagesSectionFive from "./AboutPagesSectionFive";
 import AboutPagesSectionSix from "./AboutPagesSectionSix";
+import ScrollTop from "../../components/ScrollTop";
 
 const AboutPagesIndex = () => {
   return (
     <div>
+	  <ScrollTop/>
       <div className='container'>
         <AboutPagesSectionOne />
       </div>
