@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import ButtonComponent from "./ButtonComponent";
-import arrowUpRight from "../assets/svg/arrowUpRight.svg";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import ButtonComponent from './ButtonComponent';
+import arrowUpRight from '../assets/svg/arrowUpRight.svg';
+import { Link } from 'react-router-dom';
 
 const CTASectionComponent = ({ title, desc }) => {
   return (
@@ -12,22 +12,23 @@ const CTASectionComponent = ({ title, desc }) => {
         {desc ? (
           <div className='desc paragraph-large regular text-center'>{desc}</div>
         ) : (
-          ""
+          ''
         )}
 
         <div className='button-container'>
-          <Link to='/contact'>
+          <a
+            href='https://api.whatsapp.com/send?phone=6282389424609'
+            target='_blank'
+            rel='noopener noreferrer'>
             <ButtonComponent
               text='Talk to Us'
               icon={arrowUpRight}
-              className='button filled-secondary border-radius-4 pointer paragraph-large'
-            ></ButtonComponent>
-          </Link>
+              className='button filled-secondary border-radius-4 pointer paragraph-large'></ButtonComponent>
+          </a>
           <Link to='/works'>
             <ButtonComponent
               text='Check Our Works'
-              className='button outlined-secondary border-radius-4 pointer paragraph-large'
-            ></ButtonComponent>
+              className='button outlined-secondary border-radius-4 pointer paragraph-large'></ButtonComponent>
           </Link>
         </div>
       </div>
