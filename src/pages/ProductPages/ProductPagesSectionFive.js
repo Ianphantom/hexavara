@@ -28,7 +28,7 @@ const ProductPagesSectionFive = () => {
                 data-aos-duration='1500'
               >
                 <div className='icon'>
-                  <img src={item.icon} alt='product-icon' />
+                  {item.icon}
                 </div>
                 <div className='name paragraph-medium'>{item.name}</div>
                 <div className='desc paragraph-medium regular'>
@@ -59,61 +59,68 @@ const ProductPagesSectionFive = () => {
 };
 
 const ProductPagesSectionFiveStyled = styled.div`
-  padding: 80px 0px;
-  .product-title {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 40px;
-  }
-  .products-container {
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    gap: 24px;
-    .product-container {
-      position: relative;
-      cursor: pointer;
-      padding: 12px 16px;
-      border-radius: 8px;
-      border: 1px solid var(--hxvr-neutral-60, #ccc);
-      &:hover {
-        background: var(--primary-10);
-      }
-      .featured {
-        position: absolute;
-        top: -2px;
-        right: 0;
-      }
-      .icon {
-        margin-bottom: 24px;
-        img {
-          width: 54px;
-          height: 54px;
-        }
-      }
-      .name {
-        color: var(--hxvr-neutral-100);
-        margin-bottom: 8px;
-      }
-      .desc {
-        color: var(--hxvr-neutral-secondary);
-        margin-bottom: 24px;
-      }
+	padding: 80px 0px;
+	.product-title {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 40px;
+	}
+	.products-container {
+		display: inline-grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: space-evenly;
+		gap: 24px;
+		.product-container {
+			position: relative;
+			cursor: pointer;
+			padding: 12px 16px;
+			border-radius: 8px;
+			border: 1px solid var(--hxvr-neutral-60, #ccc);
+			&:hover {
+				background: var(--primary-10);
+			}
+			.featured {
+				position: absolute;
+				top: -2px;
+				right: 0;
+			}
+			.icon {
+				margin-bottom: 24px;
+				width: 54px;
+				height: 54px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: #ecf6ff;
+				border-radius: 50%;
+				img {
+					width: 54px;
+					height: 54px;
+				}
+			}
+			.name {
+				color: var(--hxvr-neutral-100);
+				margin-bottom: 8px;
+			}
+			.desc {
+				color: var(--hxvr-neutral-secondary);
+				margin-bottom: 24px;
+			}
 
-      .more {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        color: var(--primary-base);
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    .products-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+			.more {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+				color: var(--primary-base);
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.products-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 `;
 
 export default ProductPagesSectionFive;

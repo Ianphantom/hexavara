@@ -29,7 +29,7 @@ const ProductMenu = ({ setShowProductMenu }) => {
               onClick={() => navigate(`/product/${item.id}`)}
             >
               <div className='logo-product'>
-                <img src={item.icon} alt={item.name} />
+                {item.icon}
               </div>
               <div className='product-information'>
                 <div className='product-title paragraph-medium'>
@@ -191,25 +191,38 @@ const HeaderComponentStyled = styled.div`
 `;
 
 const ProductItemStyled = styled.div`
-  background: var(--hxvr-neutral-30);
-  padding: 12px 16px;
-  display: flex;
-  gap: 24px;
-  &:hover {
-    background: var(--hxvr-neutral-40);
-  }
-  .product-information {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    .product-title {
-      color: var(--hxvr-neutral-100);
-    }
+	background: var(--hxvr-neutral-30);
+	padding: 12px 16px;
+	display: flex;
+	gap: 24px;
+	&:hover {
+		background: var(--hxvr-neutral-40);
+	}
+	.logo-product {
+		width: 32px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #ECF6FF; 
+		border-radius: 50%;
+		svg {
+			width: 19px !important;
+			height: 19px !important;
+		}
+	}
+	.product-information {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		.product-title {
+			color: var(--hxvr-neutral-100);
+		}
 
-    .product-description {
-      color: var(--hxvr-neutral-secondary);
-    }
-  }
+		.product-description {
+			color: var(--hxvr-neutral-secondary);
+		}
+	}
 `;
 
 export default HeaderComponent;
