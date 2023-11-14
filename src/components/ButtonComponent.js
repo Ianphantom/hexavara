@@ -29,7 +29,7 @@ const ButtonComponentStyled = styled.div`
 
   .outlined-primary {
     border: 1px solid var(--hxvr-brand-70);
-    background: var(--hxvr-neutral-30);
+    background: transparent;
     color: var(--hxvr-brand-70);
   }
 

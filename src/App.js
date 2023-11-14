@@ -15,6 +15,7 @@ import WorkDetailPages from "./pages/WorkDetailPages/WorkDetailPages";
 import ProductPagesIndex from "./pages/ProductPages/ProductPagesIndex";
 import ServicePagesIndex from "./pages/ServicePages/ServicePagesIndex";
 import ContactUsPagesIndex from "./pages/ContactUsPages/ContactUsPagesIndex";
+import ProductDetailPagesIndex from "./pages/ProductDetailPages/ProductDetailPagesIndex";
 import FloatingButton from "./components/FloatingButton";
 
 function App() {
@@ -29,8 +30,13 @@ function App() {
         <Route exact path='/home' element={<LandingPagesIndex />} />
         <Route exact path='/works/:id' element={<WorkDetailPages />} />
         <Route exact path='/product' element={<ProductPagesIndex />} />
+        <Route
+          exact
+          path='/product/:id'
+          element={<ProductDetailPagesIndex />}
+        />
         <Route exact path='/services' element={<ServicePagesIndex />} />
-        <Route exact path='/contact' element={<ContactUsPagesIndex />} />
+        <Route exact path='/contact' element={<ContactUsPagesIndex />} />c
         <Route
           exact
           path='/product/:id'
