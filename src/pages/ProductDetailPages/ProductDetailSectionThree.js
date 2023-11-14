@@ -69,6 +69,9 @@ const ProductDetailSectionThreeStyled = styled.div`
         .title {
           color: var(--hxvr-neutral-100);
         }
+        .desc {
+          color: var(--hxvr-neutral-secondary);
+        }
         .button-container {
           max-width: max-content;
         }
@@ -93,18 +96,30 @@ const ProductDetailSectionThreeStyled = styled.div`
   @media (max-width: 768px) {
     .bottom-container {
       width: 100%;
-      flex-direction: column;
       gap: 26px;
-      .desc {
+      .desc-container {
         width: 100% !important;
       }
       .image-container {
+        display: none;
         width: 100%;
         height: 160px !important;
         img {
           height: 240px !important;
           width: 90% !important;
         }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .bottom-container {
+      flex-direction: column !important;
+      .desc-container {
+        width: 100% !important;
+      }
+      .image-container {
+        display: none;
       }
     }
   }

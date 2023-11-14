@@ -6,7 +6,7 @@ const ProductDetailSectionFour = () => {
     <ProductDetailSectionFourStyled>
       <div className='container'>
         <div className='title text-center display-large'>
-          Managed hospital <span>Efficiently</span>
+          <div>Managed hospital </div> <span>Efficiently</span>
         </div>
         <div className='title text-center display-large'>with our system</div>
       </div>
@@ -22,11 +22,21 @@ const ProductDetailSectionFourStyled = styled.div`
     gap: 20px;
   }
   .title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     span {
       padding: 24px 48px;
       border-radius: 100px;
       background: var(--primary-base, #3182ff);
       color: var(--hxvr-neutral-30, #fdfdfd);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .title {
+      flex-direction: column;
     }
   }
 `;
