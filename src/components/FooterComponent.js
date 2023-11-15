@@ -1,11 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // import images assets
-import hexavaraLogoHeader from '../assets/images/hexavara_header.png';
-import instagramSocialMedia from '../assets/svg/instagramSocialMedia.svg';
-import linkedinSocialMedia from '../assets/svg/linkedinSocialMedia.svg';
-import { Link } from 'react-router-dom';
+import hexavaraLogoHeader from "../assets/images/hexavara_header.png";
+import instagramSocialMedia from "../assets/svg/instagramSocialMedia.svg";
+import linkedinSocialMedia from "../assets/svg/linkedinSocialMedia.svg";
 
 const FooterComponent = () => {
   return (
@@ -21,7 +20,7 @@ const FooterComponent = () => {
                 PT. Hexavara Nawasena.
               </div>
               <div className='contact-us paragraph-medium regular'>
-                Contact us on <u>hexavara@gmail.com</u>,{' '}
+                Contact us on <u>hexavara@gmail.com</u>,{" "}
                 <u>admin@hexavara.com</u> or
                 <u>+62123456789</u>
               </div>
@@ -50,7 +49,8 @@ const FooterComponent = () => {
             <a
               href='https://www.instagram.com/hexavara/'
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               <img
                 className='pointer'
                 src={instagramSocialMedia}
@@ -60,7 +60,8 @@ const FooterComponent = () => {
             <a
               href='https://www.linkedin.com/company/hexavara-technology/'
               target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+            >
               <img
                 className='pointer'
                 src={linkedinSocialMedia}
