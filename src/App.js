@@ -36,12 +36,7 @@ function App() {
           element={<ProductDetailPagesIndex />}
         />
         <Route exact path='/services' element={<ServicePagesIndex />} />
-        <Route exact path='/contact' element={<ContactUsPagesIndex />} />c
-        <Route
-          exact
-          path='/product/:id'
-          element={<div>For Now nothing here</div>}
-        />
+        <Route exact path='/contact' element={<ContactUsPagesIndex />} />
       </Routes>
       <FloatingButton />
       <FooterComponent />
