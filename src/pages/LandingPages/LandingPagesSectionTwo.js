@@ -71,7 +71,7 @@ const LandingPagesSectionTwoStyled = styled.div`
       color: var(--hxvr-neutral-secondary);
     }
     position: sticky;
-    top: 80px;
+    top: 140px;
   }
   .right {
     width: 50%;
