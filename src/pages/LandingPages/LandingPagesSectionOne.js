@@ -6,10 +6,10 @@ import styled from "styled-components";
 // immport component
 import ButtonComponent from "../../components/ButtonComponent";
 
-// import icon
-import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
 import jumbotron from "../../assets/images/jumbotron.png";
 import { Link } from "react-router-dom";
+import { ArrowUpRight } from '@phosphor-icons/react';
+
 
 const LandingPagesSectionOne = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const LandingPagesSectionOne = () => {
           <Link to='/contact'>
             <ButtonComponent
               text='Talk to Us'
-              icon={arrowUpRight}
+              icon={<ArrowUpRight size={32} />}
               className='button filled-secondary border-radius-4 pointer paragraph-large'
               data-aos='fade-right'
               data-aos-duration='1500'

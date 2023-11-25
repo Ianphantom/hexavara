@@ -5,7 +5,8 @@ import styled from "styled-components";
 import detailImages from "../../assets/images/detailImages1.png";
 
 import ButtonComponent from "../../components/ButtonComponent";
-import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
+import { ArrowUpRight } from '@phosphor-icons/react';
+
 
 const ProductDetailSectionThree = () => {
   useEffect(() => {
@@ -14,8 +15,7 @@ const ProductDetailSectionThree = () => {
   return (
     <ProductDetailSectionThreeStyled
       data-aos='fade-up'
-      data-aos-duration='1500'
-    >
+      data-aos-duration='1500'>
       <div className='container'>
         <div className='bottom-container'>
           <div className='desc-container paragraph-large regular'>
@@ -32,9 +32,8 @@ const ProductDetailSectionThree = () => {
             <div className='button-container'>
               <ButtonComponent
                 text='Talk to Us'
-                icon={arrowUpRight}
-                className='button outlined-primary border-radius-4 pointer paragraph-large'
-              ></ButtonComponent>
+                icon={<ArrowUpRight size={32} />}
+                className='button outlined-primary border-radius-4 pointer paragraph-large'></ButtonComponent>
             </div>
           </div>
           <div className='image-container'>

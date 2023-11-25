@@ -6,7 +6,7 @@ const ButtonComponent = ({ text, icon, ...otherProps }) => {
     <ButtonComponentStyled>
       <div {...otherProps}>
         <div>{text}</div>
-        {icon ? <img src={icon} alt='icon-preview' /> : ""}
+        {icon ? icon : ""}
       </div>
     </ButtonComponentStyled>
   );
@@ -31,6 +31,11 @@ const ButtonComponentStyled = styled.div`
     border: 1px solid var(--hxvr-brand-70);
     background: transparent;
     color: var(--hxvr-brand-70);
+    transition: all 0.5s ease;
+    &.hover:hover {
+      background: var(--hxvr-brand-70);
+      color: var(--hxvr-neutral-30);
+    }
   }
 
   .filled-secondary {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ButtonComponent from "../../components/ButtonComponent";
-import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
+import { ArrowUpRight } from '@phosphor-icons/react';
 const ProductDetailSectionSeven = () => {
   return (
     <ProductDetailSectionSevenStyled>
@@ -15,20 +15,18 @@ const ProductDetailSectionSeven = () => {
           </div>
         </div>
         <div className='modules-container'>
-          {["1", "2", "3", "4", "5", "6", "7", "8"].map((item, index) => (
+          {['1', '2', '3', '4', '5', '6', '7', '8'].map((item, index) => (
             <div
               className={`module-container ${
-                index < 4 ? "border-bottom" : ""
-              } ${(index + 1) % 4 !== 0 ? "border-right" : ""}`}
-              key={item}
-            >
+                index < 4 ? 'border-bottom' : ''
+              } ${(index + 1) % 4 !== 0 ? 'border-right' : ''}`}
+              key={item}>
               <svg
                 width='54'
                 height='54'
                 viewBox='0 0 54 54'
                 fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
+                xmlns='http://www.w3.org/2000/svg'>
                 <rect width='54' height='54' rx='27' fill='#ECF6FF' />
                 <path
                   d='M40 24V30C40 30.5304 39.7893 31.0391 39.4142 31.4142C39.0391 31.7893 38.5304 32 38 32H32V38C32 38.5304 31.7893 39.0391 31.4142 39.4142C31.0391 39.7893 30.5304 40 30 40H24C23.4696 40 22.9609 39.7893 22.5858 39.4142C22.2107 39.0391 22 38.5304 22 38V32H16C15.4696 32 14.9609 31.7893 14.5858 31.4142C14.2107 31.0391 14 30.5304 14 30V24C14 23.4696 14.2107 22.9609 14.5858 22.5858C14.9609 22.2107 15.4696 22 16 22H22V16C22 15.4696 22.2107 14.9609 22.5858 14.5858C22.9609 14.2107 23.4696 14 24 14H30C30.5304 14 31.0391 14.2107 31.4142 14.5858C31.7893 14.9609 32 15.4696 32 16V22H38C38.5304 22 39.0391 22.2107 39.4142 22.5858C39.7893 22.9609 40 23.4696 40 24Z'
@@ -46,9 +44,8 @@ const ProductDetailSectionSeven = () => {
         <div className='all-project text-center'>
           <ButtonComponent
             text='Read our deck'
-            icon={arrowUpRight}
-            className='button outlined-primary border-radius-4 pointer paragraph-large'
-          ></ButtonComponent>
+            icon={<ArrowUpRight size={32} />}
+            className='button outlined-primary border-radius-4 pointer paragraph-large'></ButtonComponent>
         </div>
       </div>
     </ProductDetailSectionSevenStyled>

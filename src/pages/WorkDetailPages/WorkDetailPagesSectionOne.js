@@ -127,7 +127,7 @@ const WorkDetailPagesSectionOneStyled = styled.div`
   padding: 80px 0px;
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 42px;
   .left {
     width: 40%;
     .breadcrumb-container {

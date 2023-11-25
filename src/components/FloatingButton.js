@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styled from "styled-components";
 
 const FloatingButton = () => {
@@ -11,103 +13,122 @@ const FloatingButton = () => {
       "smooth"
     );
   };
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = window.innerHeight / 2; // 100vh
+
+      setIsScrolled(scrollPosition >= threshold);
+    };
+
+    // Attach the event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <FloatingButtonStyled>
-      <svg
-        width='80'
-        height='80'
-        viewBox='0 0 96 96'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-        onClick={scrollToTop}
-      >
-        <g filter='url(#filter0_dd_329_1719)'>
-          <rect x='20' y='8' width='56' height='56' rx='12' fill='#3182FF' />
-          <path
-            d='M59.0612 41.0613C58.9218 41.2011 58.7563 41.3121 58.5739 41.3878C58.3916 41.4635 58.1961 41.5025 57.9987 41.5025C57.8013 41.5025 57.6058 41.4635 57.4235 41.3878C57.2411 41.3121 57.0756 41.2011 56.9362 41.0613L47.9999 32.125L39.0612 41.0613C38.7794 41.3431 38.3972 41.5014 37.9987 41.5014C37.6002 41.5014 37.218 41.3431 36.9362 41.0613C36.6544 40.7795 36.4961 40.3973 36.4961 39.9988C36.4961 39.6003 36.6544 39.2181 36.9362 38.9363L46.9362 28.9363C47.0756 28.7965 47.2411 28.6855 47.4235 28.6098C47.6058 28.5341 47.8013 28.4951 47.9987 28.4951C48.1961 28.4951 48.3916 28.5341 48.5739 28.6098C48.7563 28.6855 48.9218 28.7965 49.0612 28.9363L59.0612 38.9363C59.201 39.0757 59.312 39.2412 59.3877 39.4236C59.4634 39.6059 59.5024 39.8014 59.5024 39.9988C59.5024 40.1962 59.4634 40.3917 59.3877 40.574C59.312 40.7564 59.201 40.9219 59.0612 41.0613Z'
-            fill='#FDFDFD'
-          />
-        </g>
-        <defs>
-          <filter
-            id='filter0_dd_329_1719'
-            x='0'
-            y='0'
-            width='96'
-            height='96'
-            filterUnits='userSpaceOnUse'
-            colorInterpolationFilters='sRGB'
-          >
-            <feFlood floodOpacity='0' result='BackgroundImageFix' />
-            <feColorMatrix
-              in='SourceAlpha'
-              type='matrix'
-              values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
-              result='hardAlpha'
+    <FloatingButtonStyled data-aos='fade-up' data-aos-duration='1000'>
+      {isScrolled && (
+        <svg
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          width='80'
+          height='80'
+          viewBox='0 0 96 96'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'
+          onClick={scrollToTop}>
+          <g filter='url(#filter0_dd_329_1719)'>
+            <rect x='20' y='8' width='56' height='56' rx='12' fill='#3182FF' />
+            <path
+              d='M59.0612 41.0613C58.9218 41.2011 58.7563 41.3121 58.5739 41.3878C58.3916 41.4635 58.1961 41.5025 57.9987 41.5025C57.8013 41.5025 57.6058 41.4635 57.4235 41.3878C57.2411 41.3121 57.0756 41.2011 56.9362 41.0613L47.9999 32.125L39.0612 41.0613C38.7794 41.3431 38.3972 41.5014 37.9987 41.5014C37.6002 41.5014 37.218 41.3431 36.9362 41.0613C36.6544 40.7795 36.4961 40.3973 36.4961 39.9988C36.4961 39.6003 36.6544 39.2181 36.9362 38.9363L46.9362 28.9363C47.0756 28.7965 47.2411 28.6855 47.4235 28.6098C47.6058 28.5341 47.8013 28.4951 47.9987 28.4951C48.1961 28.4951 48.3916 28.5341 48.5739 28.6098C48.7563 28.6855 48.9218 28.7965 49.0612 28.9363L59.0612 38.9363C59.201 39.0757 59.312 39.2412 59.3877 39.4236C59.4634 39.6059 59.5024 39.8014 59.5024 39.9988C59.5024 40.1962 59.4634 40.3917 59.3877 40.574C59.312 40.7564 59.201 40.9219 59.0612 41.0613Z'
+              fill='#FDFDFD'
             />
-            <feMorphology
-              radius='4'
-              operator='erode'
-              in='SourceAlpha'
-              result='effect1_dropShadow_329_1719'
-            />
-            <feOffset dy='12' />
-            <feGaussianBlur stdDeviation='12' />
-            <feComposite in2='hardAlpha' operator='out' />
-            <feColorMatrix
-              type='matrix'
-              values='0 0 0 0 0.231373 0 0 0 0 0.254902 0 0 0 0 0.270588 0 0 0 0.08 0'
-            />
-            <feBlend
-              mode='normal'
-              in2='BackgroundImageFix'
-              result='effect1_dropShadow_329_1719'
-            />
-            <feColorMatrix
-              in='SourceAlpha'
-              type='matrix'
-              values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
-              result='hardAlpha'
-            />
-            <feMorphology
-              radius='4'
-              operator='erode'
-              in='SourceAlpha'
-              result='effect2_dropShadow_329_1719'
-            />
-            <feOffset />
-            <feGaussianBlur stdDeviation='6' />
-            <feComposite in2='hardAlpha' operator='out' />
-            <feColorMatrix
-              type='matrix'
-              values='0 0 0 0 0.231373 0 0 0 0 0.254902 0 0 0 0 0.270588 0 0 0 0.08 0'
-            />
-            <feBlend
-              mode='normal'
-              in2='effect1_dropShadow_329_1719'
-              result='effect2_dropShadow_329_1719'
-            />
-            <feBlend
-              mode='normal'
-              in='SourceGraphic'
-              in2='effect2_dropShadow_329_1719'
-              result='shape'
-            />
-          </filter>
-        </defs>
-      </svg>
+          </g>
+          <defs>
+            <filter
+              id='filter0_dd_329_1719'
+              x='0'
+              y='0'
+              width='96'
+              height='96'
+              filterUnits='userSpaceOnUse'
+              colorInterpolationFilters='sRGB'>
+              <feFlood floodOpacity='0' result='BackgroundImageFix' />
+              <feColorMatrix
+                in='SourceAlpha'
+                type='matrix'
+                values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+                result='hardAlpha'
+              />
+              <feMorphology
+                radius='4'
+                operator='erode'
+                in='SourceAlpha'
+                result='effect1_dropShadow_329_1719'
+              />
+              <feOffset dy='12' />
+              <feGaussianBlur stdDeviation='12' />
+              <feComposite in2='hardAlpha' operator='out' />
+              <feColorMatrix
+                type='matrix'
+                values='0 0 0 0 0.231373 0 0 0 0 0.254902 0 0 0 0 0.270588 0 0 0 0.08 0'
+              />
+              <feBlend
+                mode='normal'
+                in2='BackgroundImageFix'
+                result='effect1_dropShadow_329_1719'
+              />
+              <feColorMatrix
+                in='SourceAlpha'
+                type='matrix'
+                values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+                result='hardAlpha'
+              />
+              <feMorphology
+                radius='4'
+                operator='erode'
+                in='SourceAlpha'
+                result='effect2_dropShadow_329_1719'
+              />
+              <feOffset />
+              <feGaussianBlur stdDeviation='6' />
+              <feComposite in2='hardAlpha' operator='out' />
+              <feColorMatrix
+                type='matrix'
+                values='0 0 0 0 0.231373 0 0 0 0 0.254902 0 0 0 0 0.270588 0 0 0 0.08 0'
+              />
+              <feBlend
+                mode='normal'
+                in2='effect1_dropShadow_329_1719'
+                result='effect2_dropShadow_329_1719'
+              />
+              <feBlend
+                mode='normal'
+                in='SourceGraphic'
+                in2='effect2_dropShadow_329_1719'
+                result='shape'
+              />
+            </filter>
+          </defs>
+        </svg>
+      )}
       <a
         href='https://api.whatsapp.com/send?phone=6282389424609'
         target='_blank'
-        rel='noopener noreferrer'
-      >
+        rel='noopener noreferrer'>
         <svg
           width='48'
           height='48'
           viewBox='0 0 64 64'
           fill='none'
-          xmlns='http://www.w3.org/2000/svg'
-        >
+          xmlns='http://www.w3.org/2000/svg'>
           <path
             fillRule='evenodd'
             clipRule='evenodd'

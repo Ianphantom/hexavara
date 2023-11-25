@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import ButtonComponent from './ButtonComponent';
-import arrowUpRight from '../assets/svg/arrowUpRight.svg';
 import { Link } from 'react-router-dom';
+import { ArrowUpRight } from '@phosphor-icons/react';
+
 
 const CTASectionComponent = ({ title, desc }) => {
   return (
@@ -22,7 +23,7 @@ const CTASectionComponent = ({ title, desc }) => {
             rel='noopener noreferrer'>
             <ButtonComponent
               text='Talk to Us'
-              icon={arrowUpRight}
+              icon={<ArrowUpRight size={32} />}
               className='button filled-secondary border-radius-4 pointer paragraph-large'></ButtonComponent>
           </a>
           <Link to='/works'>

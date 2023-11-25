@@ -4,11 +4,12 @@ import 'aos/dist/aos.css';
 import styled from 'styled-components';
 import WorkPagesTagButtonComponent from '../WorkPages/WorkPagesTagButtonComponent';
 import ButtonComponent from '../../components/ButtonComponent';
-import arrowUpRight from '../../assets/svg/arrowUpRight.svg';
+import { ArrowUpRight } from '@phosphor-icons/react';
+
 
 
 const AboutPagesSectionFour = () => {
-	const [tagActive, setTagActive] = useState('All');
+	const [tagActive, setTagActive] = useState('KSO');
 	console.log(tagActive);
 	useEffect(() => {
 		AOS.init();
@@ -314,8 +315,8 @@ const AboutPagesSectionFour = () => {
 				<div className='all-project text-center'>
 					<ButtonComponent
 						text='Read our deck'
-						icon={arrowUpRight}
-						className='button outlined-primary border-radius-4 pointer paragraph-large'></ButtonComponent>
+						icon={<ArrowUpRight size={32}/>}
+						className='button outlined-primary border-radius-4 pointer paragraph-large hover'></ButtonComponent>
 				</div>
 			</div>
 		</AboutPagesSectionFourStyled>
