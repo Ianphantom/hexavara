@@ -5,7 +5,8 @@ import styled from "styled-components";
 import detailImages from "../../assets/images/detailImages1.png";
 
 import ButtonComponent from "../../components/ButtonComponent";
-import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
+import { ArrowUpRight } from '@phosphor-icons/react';
+
 
 const ProductDetailSectionSix = () => {
   useEffect(() => {
@@ -76,7 +77,7 @@ const ProductDetailSectionSix = () => {
             <div className='button-container'>
               <ButtonComponent
                 text='Contact Us'
-                icon={arrowUpRight}
+                icon={<ArrowUpRight size={32}/>}
                 className='button outlined-primary border-radius-4 pointer paragraph-large'
               ></ButtonComponent>
             </div>

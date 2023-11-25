@@ -7,7 +7,7 @@ import styled from "styled-components";
 import ButtonComponent from "../../components/ButtonComponent";
 
 // import icon
-import arrowUpRight from "../../assets/svg/arrowUpRight.svg";
+import { ArrowUpRight } from '@phosphor-icons/react';
 import jumbotron from "../../assets/images/jumbotron.png";
 
 const ServicePagesSectionOne = () => {
@@ -20,8 +20,7 @@ const ServicePagesSectionOne = () => {
         <div
           className='title display-large'
           data-aos='fade-right'
-          data-aos-duration='1500'
-        >
+          data-aos-duration='1500'>
           Make your business more efficient with our technology.
         </div>
 
@@ -34,7 +33,7 @@ const ServicePagesSectionOne = () => {
         <div className='button-cta-container'>
           <ButtonComponent
             text='Talk to Us'
-            icon={arrowUpRight}
+            icon={<ArrowUpRight size={32} />}
             className='button filled-secondary border-radius-4 pointer paragraph-large'
             data-aos='fade-right'
             data-aos-duration='1500'
@@ -44,8 +43,7 @@ const ServicePagesSectionOne = () => {
             className='works paragraph-large pointer'
             data-aos='fade-right'
             data-aos-duration='1500'
-            data-aos-delay='500'
-          >
+            data-aos-delay='500'>
             Check our works
           </div>
         </div>
