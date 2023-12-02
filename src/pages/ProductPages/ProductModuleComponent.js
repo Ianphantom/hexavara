@@ -63,7 +63,7 @@ const ProductModuleComponentStyled = styled.div`
       border-radius: 12px;
       object-fit: cover;
       height: 100%;
-      transition: all 0.5s ease;
+      transition: all 1s ease;
     }
   }
 
@@ -78,7 +78,7 @@ const ProductModuleComponentStyled = styled.div`
       padding: 36px 36px;
       border-bottom: solid 1px #296cd4;
       cursor: pointer;
-      transition: all 0.5s ease;
+      transition: all 1s ease;
       .desc {
         display: none;
       }
