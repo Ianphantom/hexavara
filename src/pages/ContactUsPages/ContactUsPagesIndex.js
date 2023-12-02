@@ -26,11 +26,11 @@ const dataCategory = [
 ];
 
 const dataBudget = [
-	'< 500K>',
-	'1000K - 5000K',
-	'5000K - 10.000K',
-	'10.000K - 20.000K',
-	'> 20.000K',
+	'< 500RB',
+	'1JT - 5JT',
+	'5JT - 10JT',
+	'10JT - 20JT',
+	'> 20JT',
 ];
 
 const ContactUsPagesIndex = () => {
