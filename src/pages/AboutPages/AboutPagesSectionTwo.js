@@ -15,15 +15,11 @@ const AboutPagesSectionTwo = () => {
         </div>
         <div className='bottom-container'>
           <div className='desc paragraph-large regular'>
-            We have a history of delivering cutting-edge IT solutions to meet
-            businesses' unique needs. Adapting to modern challenges through the
-            latest technological advancements, our portfolio includes premium IT
-            products. Our skilled team of young professionals brings extensive
-            IT expertise and innovation to the table. Guided by renowned
-            experts, we ensure exceptional product quality. In summary, we
-            pursue excellence, foster innovation, and provide IT solutions that
-            drive business growth, serving as your trusted partner on the
-            journey to success.
+            Technology is an Art and Software is a Creation. Our satisfaction
+            depends on how many problem we are able to solve and how many client
+            successfully accelerate their business.
+            <br />
+            We dedicated our life to all in for those since 2013
           </div>
           <div className='image-container'>
             <img
@@ -59,13 +55,13 @@ const AboutPagesSectionTwoStyled = styled.div`
       }
       .image-container {
         width: 50%;
-        height: 456px;
+        height: 270px;
         position: relatives;
         img {
           position: absolute;
           border-radius: 24px 0px 0px 0px;
           right: 0;
-          height: 536px;
+          height: 350px;
           width: 50%;
         }
       }
