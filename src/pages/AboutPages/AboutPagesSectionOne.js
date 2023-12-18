@@ -24,9 +24,14 @@ const AboutPagesSectionOne = () => {
         </div>
       </div>
       <div className='desc paragraph-large regular'>
-        in 2016, Hexavara Technology is dedicated to developing tailored
-        software solutions for partner organizations. With continuous growth, we
-        expand our services and products to a broader market. In 2018, we
+        Since 2013 all of Hexavara's Founder were been actively doing IT
+        research, winning some IT competition, and succesfully delivered some of
+        IT projects during in Institut Teknologi Sepuluh Nopember Surabaya
+        college. In 2016, Hexavara Technology has been established and dedicated
+        to developing tailored software solutions for partner organizations
+        until now. With continuous growth, we expand our services and products
+        to a broader market. In 2018 we established incubator and was
+        succesfully launching some products and startups. Then In 2022, we
         officially launched our software services to the global community,
         staying committed to excellence and innovation.
       </div>

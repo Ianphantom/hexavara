@@ -10,11 +10,12 @@ const LandingPagesSectionTwo = () => {
   return (
     <LandingPagesSectionTwoStyled>
       <div className='left'>
-        <div className='title display-medium '>Build Trust</div>
+        <div className='title display-medium '>Our Vision</div>
         <div className='desc paragraph-large regular'>
-          Established in 2016 with a dedicated focus on software development to
-          cater to the IT needs of our valued partners, we've come a long way on
-          our journey of growth and development.
+          Business is about the contest. Whoever win in the last lap, they will
+          get everything. Technology is the best solution to ensure your
+          victory. Are you still doubtful about that? then let us show you how
+          fast supercar should be.
         </div>
       </div>
       <div className='right'>
@@ -23,32 +24,25 @@ const LandingPagesSectionTwo = () => {
           data-aos='fade-up'
           data-aos-duration='1000'
         >
-          <div className='number display-medium'>150+</div>
-          <div className='desc paragraph-large regular'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna.
-          </div>
+          <div className='number display-medium'>77+</div>
+          <div className='desc paragraph-large regular'>Satisfied Clients</div>
         </div>
         <div
           className='number-container'
           data-aos='fade-up'
           data-aos-duration='1000'
         >
-          <div className='number display-medium'>150+</div>
-          <div className='desc paragraph-large regular'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna.
-          </div>
+          <div className='number display-medium'>116+</div>
+          <div className='desc paragraph-large regular'>Projects Delivered</div>
         </div>
         <div
           className='number-container'
           data-aos='fade-up'
           data-aos-duration='1000'
         >
-          <div className='number display-medium'>150+</div>
+          <div className='number display-medium'>86%</div>
           <div className='desc paragraph-large regular'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-            mi. Aliquam in hendrerit urna.
+            Customer Retention Rate
           </div>
         </div>
       </div>

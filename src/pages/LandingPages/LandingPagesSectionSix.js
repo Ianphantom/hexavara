@@ -6,8 +6,8 @@ const LandingPagesSectionSix = () => {
     <LandingPagesSectionSixStyled>
       <div className='container'>
         <div className='title heading-large text-center'>
-          We have collaborated with <span>50+</span> client partners from all
-          over Indonesia.
+          We have collaborated with <span>50+</span> client partners from Big
+          Company and foundation all over Indonesia.
         </div>
       </div>
     </LandingPagesSectionSixStyled>

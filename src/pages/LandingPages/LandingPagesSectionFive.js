@@ -40,8 +40,12 @@ const LandingPagesSectionFive = () => {
             </div>
             <div className='title heading-small'>Software Development</div>
             <div className='desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-              animi consectetur
+              Elevate your digital presence with our software development
+              services. We specialize in crafting bespoke solutions to your
+              business needs, ensuring seamless functionality and user-centric
+              experiences. Our expert team employs the latest technologies to
+              deliver scalable, high-performance software that propels your
+              business forward.
               <div className='ul'>
                 {[
                   "Web Development",
@@ -49,7 +53,7 @@ const LandingPagesSectionFive = () => {
                   "Geographical Information System",
                   "Internet of Things",
                   "Enterprise Resource Planning",
-                  "Accounting Software",
+                  "Backend Management Services (Accounting, HRD, HSE, etc)",
                 ].map((item, index) => (
                   <div className='ul-item' key={index}>
                     <div className='li'>
@@ -92,16 +96,21 @@ const LandingPagesSectionFive = () => {
                 />
               </svg>
             </div>
-            <div className='title heading-small'>IT Security</div>
+            <div className='title heading-small'>Startup & Incubator</div>
             <div className='desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna.
+              Navigate the complexities of startup success with our expert
+              consultancy services. From ideation to execution, we offer
+              strategic guidance to optimize your business model. With bunch of
+              investor partner behind us we will help to accelerate growth of
+              your startup. Make a collaboration with us to turn your
+              entrepreneurial vision into reality.
               <div className='ul'>
                 {[
-                  "Network Security",
-                  "Internet Security",
-                  "Endpoint Security",
-                  "Cloud Security",
+                  "Coaching",
+                  "Investment",
+                  "Fundraising",
+                  "Seed & Development",
+                  "Partnership",
                 ].map((item, index) => (
                   <div className='ul-item' key={index}>
                     <div className='li'>
@@ -144,19 +153,22 @@ const LandingPagesSectionFive = () => {
                 />
               </svg>
             </div>
-            <div className='title heading-small'>Media and Advertising</div>
+            <div className='title heading-small'>Managed Services</div>
             <div className='desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna.
+              Optimize your IT infrastructure with our comprehensive managed
+              services. We provide comprehensive solutions, including proactive
+              system monitoring, and strategic IT planning. Trust us to optimize
+              your technology segment, ensuring most effective operations and
+              allowing you to stay ahead in the digital landscape.
               <div className='ul'>
                 {[
-                  "Advertising, Digital Marketing",
-                  "Aerial Photography Videography",
-                  "Videography",
-                  "Branding",
-                  "Motion Graphic",
-                  "Graphic Design",
-                  "3D Assets",
+                  "IT Outsourcing",
+                  "Maintenance",
+                  "Data Migration",
+                  "Configuration",
+                  "Training",
+                  "Gap Analysis",
+                  "IT Consultant",
                 ].map((item, index) => (
                   <div className='ul-item' key={index}>
                     <div className='li'>

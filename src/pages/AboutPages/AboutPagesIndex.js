@@ -14,14 +14,11 @@ import ScrollTop from "../../components/ScrollTop";
 const AboutPagesIndex = () => {
   return (
     <div>
-	  <ScrollTop/>
+      <ScrollTop />
       <div className='container'>
         <AboutPagesSectionOne />
       </div>
       <AboutPagesSectionTwo />
-      <div className='container'>
-        <AboutPagesSectionThree />
-      </div>
       <HappyClientComponent />
       <AboutPagesSectionFour />
       <div className='container'>
