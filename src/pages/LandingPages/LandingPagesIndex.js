@@ -10,7 +10,7 @@ import LandingPagesSectionSix from "./LandingPagesSectionSix";
 import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
 import LandingPagesSectionSeven from "./LandingPagesSectionSeven";
-import LandingPagesSectionEight from "./LandingPagesSectionEight";
+// import LandingPagesSectionEight from "./LandingPagesSectionEight";
 import ScrollTop from "../../components/ScrollTop";
 
 const LandingPagesIndex = () => {
@@ -30,7 +30,8 @@ const LandingPagesIndex = () => {
       <HappyClientComponent />
 
       <LandingPagesSectionSeven />
-      <LandingPagesSectionEight />
+      {/* TODO This feature is disabled in deploy V1 */}
+      {/* <LandingPagesSectionEight /> */}
       <CTASectionComponent
         title='Ready to work with us?'
         desc='Effective communication is the cornerstone of success'

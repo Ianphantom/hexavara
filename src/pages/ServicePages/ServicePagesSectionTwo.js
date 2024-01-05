@@ -15,8 +15,8 @@ const ServicePagesSectionTwo = () => {
       <div className='solutions-container'>
         <div className='solution-container'>
           <InformationParagraphComponent
-            text1='50'
-            text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
+            text1='77'
+            text2='77+ satisfied clients trust us for exceptional service and results.'
             text1Config='display-medium'
             theme='primary'
           />
@@ -26,14 +26,13 @@ const ServicePagesSectionTwo = () => {
           width='2'
           height='102'
           viewBox='0 0 2 102'
-          fill='none'
-        >
+          fill='none'>
           <path d='M0.833496 1V101' stroke='#3182FF' strokeLinecap='round' />
         </svg>
         <div className='solution-container'>
           <InformationParagraphComponent
-            text1='8000'
-            text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
+            text1='116'
+            text2='116 projects and counting – delivering quality, exceeding expectations every time.'
             text1Config='display-medium'
             theme='primary'
           />
@@ -43,14 +42,13 @@ const ServicePagesSectionTwo = () => {
           width='2'
           height='102'
           viewBox='0 0 2 102'
-          fill='none'
-        >
+          fill='none'>
           <path d='M0.833496 1V101' stroke='#3182FF' strokeLinecap='round' />
         </svg>
         <div className='solution-container'>
           <InformationParagraphComponent
-            text1='23'
-            text2='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. '
+            text1='86 %'
+            text2='86% choose us again – a testament to trust and satisfaction.'
             text1Config='display-medium'
             theme='primary'
           />
@@ -75,6 +73,7 @@ const ServicePagesSectionTwoStyled = styled.div`
     gap: 32px;
     align-items: center;
     margin-bottom: 48px;
+	justify-content: space-evenly;
     .solution-container {
       padding: 32px 24px;
     }

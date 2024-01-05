@@ -1,61 +1,62 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // import component
 import ButtonComponent from "./ButtonComponent";
 
 // import images assets
 import hexavaraLogoHeader from "../assets/images/hexavara_header.png";
-import caretDown from "../assets/svg/caretDown.svg";
+// import caretDown from "../assets/svg/caretDown.svg";
 
-// import data
-import { dataProduct } from "../data/data-product";
+// // import data
+// import { dataProduct } from "../data/data-product";
 
-const ProductMenu = ({ setShowProductMenu }) => {
-  const navigate = useNavigate();
-  return (
-    <div
-      className='product-sub-list show'
-      onMouseEnter={() => setShowProductMenu(true)}
-      onMouseLeave={() => setShowProductMenu(false)}
-    >
-      <div>
-        <div className='row'>
-          {dataProduct.map((item) => (
-            <ProductItemStyled
-              className='col-md-6 pointer'
-              key={item.id}
-              onClick={() => navigate(`/product/${item.id}`)}
-            >
-              <div className='logo-product'>
-                {item.icon}
-              </div>
-              <div className='product-information'>
-                <div className='product-title paragraph-medium'>
-                  {item.name}
-                </div>
-                <div className='small-not-show product-description paragraph-medium regular'>
-                  {item.description}
-                </div>
-              </div>
-            </ProductItemStyled>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
+    // TODO This feature is disabled in deploy V1
+// const ProductMenu = ({ setShowProductMenu }) => {
+//   const navigate = useNavigate();
+//   return (
+//     <div
+//       className='product-sub-list show'
+//       onMouseEnter={() => setShowProductMenu(true)}
+//       onMouseLeave={() => setShowProductMenu(false)}
+//     >
+//       <div>
+//         <div className='row'>
+//           {dataProduct.map((item) => (
+//             <ProductItemStyled
+//               className='col-md-6 pointer'
+//               key={item.id}
+//               onClick={() => navigate(`/product/${item.id}`)}
+//             >
+//               <div className='logo-product'>
+//                 {item.icon}
+//               </div>
+//               <div className='product-information'>
+//                 <div className='product-title paragraph-medium'>
+//                   {item.name}
+//                 </div>
+//                 <div className='small-not-show product-description paragraph-medium regular'>
+//                   {item.description}
+//                 </div>
+//               </div>
+//             </ProductItemStyled>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 const HeaderComponent = () => {
-  const navigate = useNavigate();
-  const [showProductMenu, setShowProductMenu] = useState(0);
+//   const navigate = useNavigate();
+//   const [showProductMenu, setShowProductMenu] = useState(0);
   return (
     <HeaderComponentStyled>
       <div className='container'>
         <nav className='navbar navbar-expand-lg navbar-light'>
-          <Link to={"/"}>
-            {" "}
+          <Link to={'/'}>
+            {' '}
             <img
               className='pointer'
               src={hexavaraLogoHeader}
@@ -70,22 +71,21 @@ const HeaderComponent = () => {
             data-target='#navbarNavAltMarkup'
             aria-controls='navbarNavAltMarkup'
             aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
+            aria-label='Toggle navigation'>
             <span className='navbar-toggler-icon'></span>
           </button>
           <div
             className='collapse navbar-collapse navbar-container'
-            id='navbarNavAltMarkup'
-          >
+            id='navbarNavAltMarkup'>
             <div className='navbar-nav navigation mx-auto'>
-              <Link to={"/works"}>
+              <Link to={'/works'}>
                 <div className='paragraph-medium regular pointer'>Works</div>
               </Link>
-              <Link to={"/about"}>
+              <Link to={'/about'}>
                 <div className='paragraph-medium regular pointer'>About Us</div>
               </Link>
-              <div
+              {/* TODO This feature is disabled in deploy V1 */}
+              {/* <div
                 className='paragraph-medium regular pointer'
                 onMouseOver={() => setShowProductMenu(!showProductMenu)}
                 onClick={() => navigate("/product")}
@@ -104,13 +104,13 @@ const HeaderComponent = () => {
                 />
               ) : (
                 ""
-              )}
-              <Link to={"/services"}>
+              )} */}
+              <Link to={'/services'}>
                 <div className='paragraph-medium regular pointer'>Services</div>
               </Link>
             </div>
             <div className='button-container'>
-              <Link to={"/contact"}>
+              <Link to={'/contact'}>
                 <ButtonComponent
                   text='Start a Project?'
                   className='button filled-primary border-radius-medium pointer'
@@ -190,39 +190,39 @@ const HeaderComponentStyled = styled.div`
   }
 `;
 
-const ProductItemStyled = styled.div`
-	background: var(--hxvr-neutral-30);
-	padding: 12px 16px;
-	display: flex;
-	gap: 24px;
-	&:hover {
-		background: var(--hxvr-neutral-40);
-	}
-	.logo-product {
-		width: 32px;
-		height: 32px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #ECF6FF; 
-		border-radius: 50%;
-		svg {
-			width: 19px !important;
-			height: 19px !important;
-		}
-	}
-	.product-information {
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-		.product-title {
-			color: var(--hxvr-neutral-100);
-		}
+// const ProductItemStyled = styled.div`
+// 	background: var(--hxvr-neutral-30);
+// 	padding: 12px 16px;
+// 	display: flex;
+// 	gap: 24px;
+// 	&:hover {
+// 		background: var(--hxvr-neutral-40);
+// 	}
+// 	.logo-product {
+// 		width: 32px;
+// 		height: 32px;
+// 		display: flex;
+// 		align-items: center;
+// 		justify-content: center;
+// 		background: #ECF6FF; 
+// 		border-radius: 50%;
+// 		svg {
+// 			width: 19px !important;
+// 			height: 19px !important;
+// 		}
+// 	}
+// 	.product-information {
+// 		display: flex;
+// 		flex-direction: column;
+// 		gap: 8px;
+// 		.product-title {
+// 			color: var(--hxvr-neutral-100);
+// 		}
 
-		.product-description {
-			color: var(--hxvr-neutral-secondary);
-		}
-	}
-`;
+// 		.product-description {
+// 			color: var(--hxvr-neutral-secondary);
+// 		}
+// 	}
+// `;
 
 export default HeaderComponent;

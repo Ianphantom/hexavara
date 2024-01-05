@@ -12,7 +12,7 @@ import ScrollTop from "../../components/ScrollTop";
 const ServicePagesIndex = () => {
   return (
     <div>
-	  <ScrollTop/>
+      <ScrollTop />
       <ServicePagesSectionOne />
       <ServicePagesSectionTwo />
       <ServicePagesSectionThree />
@@ -23,7 +23,7 @@ const ServicePagesIndex = () => {
       <HappyClientComponent />
       <CTASectionComponent
         title='Ready to work with us?'
-        desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.'
+        desc='Effective communication is the cornerstone of success'
       />
     </div>
   );

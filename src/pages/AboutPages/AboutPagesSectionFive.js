@@ -21,13 +21,6 @@ const AboutPagesSectionFive = () => {
           <div className='information'>
             <div className='title paragraph-medium regular'>CEO & Founder</div>
             <div className='name heading-medium'>Founder's Name</div>
-            <div className='desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </div>
           </div>
         </ProfileContainerStyled>
         <ProfileContainerStyled data-aos='fade-up' data-aos-duration='1000'>
@@ -36,13 +29,6 @@ const AboutPagesSectionFive = () => {
           <div className='information'>
             <div className='title paragraph-medium regular'>CEO & Founder</div>
             <div className='name heading-medium'>Founder's Name</div>
-            <div className='desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
-              vitae mattis tellus. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </div>
           </div>
         </ProfileContainerStyled>
       </div>

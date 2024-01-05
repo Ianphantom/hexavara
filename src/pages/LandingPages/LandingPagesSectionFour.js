@@ -13,8 +13,7 @@ const LandingPagesSectionFour = () => {
 			<div className='product-title'>
 				<div className='title display-medium'>Product</div>
 				<div className='desc paragraph-medium regular'>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum neque
-					minus, non eveniet ipsam quia et magni error laborum id.
+					Our company has established several products that have been trusted by various customers in their sectors
 				</div>
 			</div>
 			<div className='products-container'>
@@ -52,8 +51,8 @@ const LandingPagesSectionFour = () => {
 								{item.description}
 							</div>
 						</div>
-
-						<div className='more'>
+						{/* TODO This feature is disabled in deploy V1 */}
+						{/* <div className='more'>
 							<div className='paragraph-medium'>Learn More</div>
 							<svg
 								width='20'
@@ -66,7 +65,7 @@ const LandingPagesSectionFour = () => {
 									fill='#3182FF'
 								/>
 							</svg>
-						</div>
+						</div> */}
 					</div>
 				))}
 			</div>
@@ -84,7 +83,7 @@ const LandingPagesSectionFourStyled = styled.div`
 	}
 	.products-container {
 		display: inline-grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		justify-content: space-evenly;
 		gap: 24px;
 		.product-container {
