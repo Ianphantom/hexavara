@@ -7,7 +7,7 @@ import styled from "styled-components";
 import TagComponent from "./TagComponent";
 
 // import assets
-import ArrowRight from "../assets/svg/arrowRight.svg";
+// import ArrowRight from "../assets/svg/arrowRight.svg";
 
 const WorkCardComponent = ({ tag, title, desc, theme }) => {
   useEffect(() => {
@@ -16,26 +16,26 @@ const WorkCardComponent = ({ tag, title, desc, theme }) => {
   return (
     <WorkCardComponentStyled
       className={`pointer ${theme}`}
-      data-aos="zoom-out"
-      data-aos-duration="1500"
+      data-aos='zoom-out'
+      data-aos-duration='1500'
     >
       <img
         src={`https://source.unsplash.com/random/200x200?sig=${Math.random()}`}
-        alt="project-icon"
-        className="image-container border-radius-large"
+        alt='project-icon'
+        className='image-container border-radius-large'
       />
 
-      <div className="information">
-        <TagComponent text={tag} theme="primary" />
+      <div className='information'>
+        <TagComponent text={tag} theme='primary' />
 
-        <div className="title paragraph-large">{title}</div>
-        <div className="description paragraph-medium regular">{desc}</div>
+        <div className='title paragraph-large'>{title}</div>
+        <div className='description paragraph-medium regular'>{desc}</div>
 
-        <div className="read-more paragraph-large">
+        {/* <div className="read-more paragraph-large">
           <span>
             Read more <img src={ArrowRight} alt="arrow-right" />
           </span>
-        </div>
+        </div> */}
       </div>
     </WorkCardComponentStyled>
   );

@@ -4,6 +4,7 @@ import styled from "styled-components";
 // import component
 import WorkPagesTagButtonComponent from "./WorkPagesTagButtonComponent";
 import WorkCardComponent from "../../components/WorkCardComponent";
+import { dataWork } from "../../data/data-works";
 
 // import icon
 import ArrowNarrowLeft from "../../assets/svg/arrowNarrowLeft.svg";
@@ -12,7 +13,22 @@ import { Link } from "react-router-dom";
 
 const WorkPagesSectionTwo = () => {
   const [tagActive, setTagActive] = useState("All");
-  console.log(tagActive);
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPage = Math.ceil(dataWork.length / 9);
+  console.log(totalPage);
+  const goToPage = (number) => {
+    if (currentPage + number < 1) {
+      setCurrentPage(1);
+    } else if (currentPage + number > totalPage) {
+      setCurrentPage(totalPage);
+    } else {
+      setCurrentPage(currentPage + number);
+    }
+    window.scroll({
+      top: 0,
+      left: 0,
+    });
+  };
   return (
     <WorkPagesSectionTwoStyled className='container'>
       <div className='tag-container'>
@@ -26,7 +42,7 @@ const WorkPagesSectionTwo = () => {
           tagActive={tagActive}
           setTagActive={setTagActive}
         />
-        <WorkPagesTagButtonComponent
+        {/* <WorkPagesTagButtonComponent
           text='IT Security'
           tagActive={tagActive}
           setTagActive={setTagActive}
@@ -35,124 +51,54 @@ const WorkPagesSectionTwo = () => {
           text='Media and Advertising'
           tagActive={tagActive}
           setTagActive={setTagActive}
-        />
+        /> */}
       </div>
 
       <div className='work-container'>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
-        <div className='work-card-container'>
-          <Link to={"/works/1"}>
-            <WorkCardComponent
-              tag='Software Development'
-              title='SISTEM WAREHOUSE - MJA UNILEVER'
-              desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-              theme='small-medium'
-            />
-          </Link>
-        </div>
+        {dataWork.map((item) => {
+          if (item.id > (currentPage - 1) * 9 && item.id <= currentPage * 9) {
+            console.log(item.id);
+            return (
+              <div className='work-card-container' key={item.id}>
+                <Link to={`/works`}>
+                  <WorkCardComponent
+                    tag={item.tag}
+                    title={item.title}
+                    desc={item.desc}
+                    theme='small-medium'
+                  />
+                </Link>
+              </div>
+            );
+          }
+          return "";
+        })}
       </div>
 
       <div className='pager'>
-        <div className='pager-item pointer before'>
+        <div className='pager-item pointer before' onClick={() => goToPage(-1)}>
           <div className='paragraph-small regular'>
             <img src={ArrowNarrowLeft} alt='before' />
           </div>
         </div>
-        <div className='pager-item pointer active'>
-          <div className='paragraph-small regular'>1</div>
-        </div>
-        <div className='pager-item pointer'>
-          <div className='paragraph-small regular'>2</div>
-        </div>
-        <div className='pager-item pointer'>
-          <div className='paragraph-small regular'>...</div>
-        </div>
-        <div className='pager-item pointer'>
-          <div className='paragraph-small regular'>8</div>
-        </div>
-        <div className='pager-item pointer'>
-          <div className='paragraph-small regular'>9</div>
-        </div>
-        <div className='pager-item pointer after'>
+        {(() => {
+          const arr = [];
+          for (let i = 0; i < totalPage; i++) {
+            arr.push(
+              <div
+                className={`pager-item pointer ${
+                  currentPage === i + 1 ? "active" : ""
+                }`}
+                onClick={() => setCurrentPage(i + 1)}
+                key={i}
+              >
+                <div className='paragraph-small regular'>{i + 1}</div>
+              </div>
+            );
+          }
+          return arr;
+        })()}
+        <div className='pager-item pointer after' onClick={() => goToPage(1)}>
           <div className='paragraph-small regular'>
             <img src={ArrowNarrowRight} alt='after' />
           </div>
