@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 import styled from "styled-components";
 
 // import images
-import founder1 from "../../assets/images/founder-1.png";
-import founder2 from "../../assets/images/founder-2.png";
+import founder1 from "../../assets/images/founder-tegar.jpg";
+import founder2 from '../../assets/images/founder-luffi.jpg';
 
 const AboutPagesSectionFive = () => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const AboutPagesSectionFive = () => {
 
           <div className='information'>
             <div className='title paragraph-medium regular'>CEO & Founder</div>
-            <div className='name heading-medium'>Founder's Name</div>
+            <div className='name heading-medium'>Ramadhani Tegar Perkasa</div>
           </div>
         </ProfileContainerStyled>
         <ProfileContainerStyled data-aos='fade-up' data-aos-duration='1000'>
@@ -28,7 +28,7 @@ const AboutPagesSectionFive = () => {
 
           <div className='information'>
             <div className='title paragraph-medium regular'>CEO & Founder</div>
-            <div className='name heading-medium'>Founder's Name</div>
+            <div className='name heading-medium'>Luffi Aditya Sandy</div>
           </div>
         </ProfileContainerStyled>
       </div>

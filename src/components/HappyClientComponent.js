@@ -31,6 +31,8 @@ const HappyClientComponent = () => {
         <img src={client8} alt='client-logo' />
         <img src={client9} alt='client-logo' />
         <img src={client10} alt='client-logo' />
+        <img src={client6} alt='client-logo' />
+        <img src={client10} alt='client-logo' />
       </Marquee>
     </HappyClientComponentStyled>
   );

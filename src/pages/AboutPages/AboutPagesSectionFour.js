@@ -60,8 +60,53 @@ const AboutPagesSectionFour = () => {
               Requirement Gathering
             </div>
             <div className='step-desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna.
+              <div className='ul'>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Collecting Problems
+                  </div>
+                </div>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Explore Of Current Solution
+                  </div>
+                </div>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Auditing Existing Solution
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className='arrow' data-aos='fade-right' data-aos-delay='100'>
@@ -108,8 +153,53 @@ const AboutPagesSectionFour = () => {
             </div>
             <div className='step-title paragraph-large'>Problem Analysis</div>
             <div className='step-desc paragraph-medium regular'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna.
+              <div className='ul'>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Define Problem Points
+                  </div>
+                </div>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Analyze Flow Problem
+                  </div>
+                </div>
+                <div className='ul-item'>
+                  <div className='li'>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='8'
+                      height='8'
+                      viewBox='0 0 12 12'
+                      fill='none'>
+                      <circle cx='6' cy='6' r='6' fill='#616161' />
+                    </svg>
+                  </div>
+                  <div className='li-text paragraph-medium regular'>
+                    Define Solution
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className='arrow' data-aos='fade-right' data-aos-delay='300'>

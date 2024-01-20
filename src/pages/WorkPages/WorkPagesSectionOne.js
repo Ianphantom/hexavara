@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 const WorkPagesSectionOne = () => {
   return (
-    <WorkPagesSectionOneStyled className="container">
-      <div className="title display-large">Our Work</div>
-      <div className="desc paragraph-large regular">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-        mattis ligula consectetur, ultrices mauris.
+    <WorkPagesSectionOneStyled className='container'>
+      <div className='title display-large'>Our Work</div>
+      <div className='desc paragraph-large regular'>
+        Experience innovation, explore excellence. Our Works exhibit a
+        harmonious blend of creativity and functionality, setting new standards
+        in design and client satisfaction.
       </div>
     </WorkPagesSectionOneStyled>
   );
