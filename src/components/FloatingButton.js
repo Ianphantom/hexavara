@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 
 const FloatingButton = () => {
@@ -25,11 +25,11 @@ const FloatingButton = () => {
     };
 
     // Attach the event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -43,7 +43,8 @@ const FloatingButton = () => {
           viewBox='0 0 96 96'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'
-          onClick={scrollToTop}>
+          onClick={scrollToTop}
+        >
           <g filter='url(#filter0_dd_329_1719)'>
             <rect x='20' y='8' width='56' height='56' rx='12' fill='#3182FF' />
             <path
@@ -59,7 +60,8 @@ const FloatingButton = () => {
               width='96'
               height='96'
               filterUnits='userSpaceOnUse'
-              colorInterpolationFilters='sRGB'>
+              colorInterpolationFilters='sRGB'
+            >
               <feFlood floodOpacity='0' result='BackgroundImageFix' />
               <feColorMatrix
                 in='SourceAlpha'
@@ -120,15 +122,17 @@ const FloatingButton = () => {
         </svg>
       )}
       <a
-        href='https://api.whatsapp.com/send?phone=6282389424609'
+        href='https://api.whatsapp.com/send?phone=628113451550'
         target='_blank'
-        rel='noopener noreferrer'>
+        rel='noopener noreferrer'
+      >
         <svg
           width='48'
           height='48'
           viewBox='0 0 64 64'
           fill='none'
-          xmlns='http://www.w3.org/2000/svg'>
+          xmlns='http://www.w3.org/2000/svg'
+        >
           <path
             fillRule='evenodd'
             clipRule='evenodd'

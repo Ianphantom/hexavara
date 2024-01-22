@@ -1,9 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import ButtonComponent from './ButtonComponent';
-import { Link } from 'react-router-dom';
-import { ArrowUpRight } from '@phosphor-icons/react';
-
+import React from "react";
+import styled from "styled-components";
+import ButtonComponent from "./ButtonComponent";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "@phosphor-icons/react";
 
 const CTASectionComponent = ({ title, desc }) => {
   return (
@@ -13,23 +12,26 @@ const CTASectionComponent = ({ title, desc }) => {
         {desc ? (
           <div className='desc paragraph-large regular text-center'>{desc}</div>
         ) : (
-          ''
+          ""
         )}
 
         <div className='button-container'>
           <a
-            href='https://api.whatsapp.com/send?phone=6282389424609'
+            href='https://api.whatsapp.com/send?phone=628113451550'
             target='_blank'
-            rel='noopener noreferrer'>
+            rel='noopener noreferrer'
+          >
             <ButtonComponent
               text='Talk to Us'
               icon={<ArrowUpRight size={32} />}
-              className='button filled-secondary border-radius-4 pointer paragraph-large'></ButtonComponent>
+              className='button filled-secondary border-radius-4 pointer paragraph-large'
+            ></ButtonComponent>
           </a>
           <Link to='/works'>
             <ButtonComponent
               text='Check Our Works'
-              className='button outlined-secondary border-radius-4 pointer paragraph-large'></ButtonComponent>
+              className='button outlined-secondary border-radius-4 pointer paragraph-large'
+            ></ButtonComponent>
           </Link>
         </div>
       </div>

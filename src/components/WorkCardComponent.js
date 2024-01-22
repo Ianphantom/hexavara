@@ -9,7 +9,7 @@ import TagComponent from "./TagComponent";
 // import assets
 // import ArrowRight from "../assets/svg/arrowRight.svg";
 
-const WorkCardComponent = ({ tag, title, desc, theme }) => {
+const WorkCardComponent = ({ tag, title, desc, theme, image }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -20,7 +20,7 @@ const WorkCardComponent = ({ tag, title, desc, theme }) => {
       data-aos-duration='1500'
     >
       <img
-        src={`https://source.unsplash.com/random/200x200?sig=${Math.random()}`}
+        src={image}
         alt='project-icon'
         className='image-container border-radius-large'
       />

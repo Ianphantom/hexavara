@@ -20,9 +20,7 @@ const FooterComponent = () => {
                 PT. Hexavara Nawasena.
               </div>
               <div className='contact-us paragraph-medium regular'>
-                Contact us on <u>hexavara@gmail.com</u>,{" "}
-                <u>admin@hexavara.com</u> or
-                <u>+62123456789</u>
+                Contact us on <u>hexavara@gmail.com</u>, <u>+628113451550</u>
               </div>
             </div>
             <div className='address address-one'>

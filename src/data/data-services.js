@@ -12,7 +12,7 @@ export const dataService = [
     id: 1,
     name: "Web Development",
     description:
-      "Pengembangan aplikasi berbasis wep seperti e-commerce, e-government, dan company profile.",
+      "Development of web-based applications such as e-commerce, e-government, and company profiles.",
     icon: sistemManagementRSIcon,
     isFeatured: true,
   },
@@ -20,7 +20,7 @@ export const dataService = [
     id: 2,
     name: "Mobile Apps Development",
     description:
-      "Pengembangan aplikasi berbasis mobile pada platform Android & iOS,",
+      "Mobile based application development on Android & iOS platforms",
     icon: sistemKeuanganDanKoperasi,
     isFeatured: true,
   },
@@ -28,7 +28,7 @@ export const dataService = [
     id: 3,
     name: "Digital Marketing",
     description:
-      "Memberikan layanan pembuatan dan pengelolaan konsep digital marketing hingga evaluasi progress secara berkala.",
+      "Providing services for creating and managing digital marketing concepts and evaluating progress periodically.",
     icon: enterpriseResourcePlanning,
     isFeatured: true,
   },
@@ -36,7 +36,7 @@ export const dataService = [
     id: 4,
     name: "GIS",
     description:
-      "Pengembangan sistem aplikasi berbasis pada pengolahan data geographical.",
+      "Development of an application system based on geographical data processing.",
     icon: eGovernment,
     isFeatured: true,
   },
@@ -44,7 +44,7 @@ export const dataService = [
     id: 5,
     name: "Internet of Things",
     description:
-      "Integrasi sistem dengan perangkat elektronik untuk menangkap dan mengolah data melalui jaringan internet.",
+      "System integration with electronic devices to capture and process data via the internet network.",
     icon: sistemPengelolaanTokoOnline,
     isFeatured: false,
   },
@@ -52,7 +52,7 @@ export const dataService = [
     id: 6,
     name: "Accounting Software",
     description:
-      "Pengembangan software untuk aktivitas pencatatan akuntansi ke dalam modul-modul spesifik seperti pembelian, penjualan, penggajian, dll.",
+      "Software development for accounting recording activities into specific modules such as purchasing, sales, payroll, etc.",
     icon: ruangTemu,
     isFeatured: false,
   },
@@ -60,7 +60,7 @@ export const dataService = [
     id: 7,
     name: "Advertising",
     description:
-      "Memberikan layanan konsultasi rencana produk/brand dari klien dan siap membantu dalam proses realisasi pengiklanan dalam bentuk fisik ataupun difital",
+      "Providing client product/brand plan consultation services and ready to assist in the process of realizing advertising in physical or digital form.",
     icon: inventoryManagementSystem,
     isFeatured: false,
   },
@@ -68,7 +68,7 @@ export const dataService = [
     id: 8,
     name: "Enterprise Resource Planning",
     description:
-      "Pengembangan perangkat lunak untuk perencanaan dan pengelolaan sumber daya perusahaan yang saling berintegrasi",
+      "Software development for planning and managing integrated company resources",
     icon: systemPemesananJasa,
     isFeatured: false,
   },

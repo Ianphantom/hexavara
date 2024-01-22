@@ -7,7 +7,7 @@ import styled from "styled-components";
 import ButtonComponent from "../../components/ButtonComponent";
 
 // import icon
-import { ArrowUpRight } from '@phosphor-icons/react';
+import { ArrowUpRight } from "@phosphor-icons/react";
 import jumbotron from "../../assets/images/jumbotron.png";
 
 const ServicePagesSectionOne = () => {
@@ -20,15 +20,16 @@ const ServicePagesSectionOne = () => {
         <div
           className='title display-large'
           data-aos='fade-right'
-          data-aos-duration='1500'>
+          data-aos-duration='1500'
+        >
           Make your business more efficient with our technology.
         </div>
 
-        <div className='desc paragraph-medium regular'>
+        {/* <div className='desc paragraph-medium regular'>
           Lorem ipsum lor dolor calamet Lorem ipsum lor dolor calametLorem ipsum
           lor dolor calametLorem ipsum lor dolor calametLorem ipsum lor dolor
           calamet.
-        </div>
+        </div> */}
 
         <div className='button-cta-container'>
           <ButtonComponent
@@ -43,7 +44,8 @@ const ServicePagesSectionOne = () => {
             className='works paragraph-large pointer'
             data-aos='fade-right'
             data-aos-duration='1500'
-            data-aos-delay='500'>
+            data-aos-delay='500'
+          >
             Check our works
           </div>
         </div>

@@ -66,6 +66,7 @@ const WorkPagesSectionTwo = () => {
                     title={item.title}
                     desc={item.desc}
                     theme='small-medium'
+                    image={item.images}
                   />
                 </Link>
               </div>

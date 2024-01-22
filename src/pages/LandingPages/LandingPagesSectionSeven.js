@@ -8,7 +8,11 @@ import TagComponent from "../../components/TagComponent";
 import ButtonComponent from "../../components/ButtonComponent";
 import { Link } from "react-router-dom";
 
-import { ArrowUpRight } from '@phosphor-icons/react';
+import { ArrowUpRight } from "@phosphor-icons/react";
+import AEGIS from "../../assets/svg/AEGIS - SISTEM AKADEMIK.svg";
+import INDIPRO from "../../assets/svg/INDIPRO TELKOM SBY.svg";
+import ZELLTECH from "../../assets/svg/E-SALES ZELLTECH.svg";
+import MJSUNIlEVER from "../../assets/svg/SISTEM WAREHOUSE - MJA UNILEVER.svg";
 
 const LandingPagesSectionSeven = () => {
   useEffect(() => {
@@ -21,168 +25,152 @@ const LandingPagesSectionSeven = () => {
       </div>
       <div className='projects-container'>
         <div className='left'>
-          <Link to='/works/1'>
-            <div className='project-container pointer'>
-              <div className='image-container '>
-                <img
-                  className='small-image'
-                  src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
-                  alt='project-preview'
-                />
-                <div className='overlay'>
-                  <div className='read-more text paragraph-large'>
-                    <div className='paragraph-large mb-2'>
-                      SISTEM WAREHOUSE - MJA UNILEVER
-                    </div>
-                    <span>
-                      Read more{' '}
-                      <svg
-                        width='24'
-                        height='24'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                          d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
-                          fill='#FFFFFF'
-                        />
-                      </svg>
-                    </span>
+          <div className='project-container pointer'>
+            <div className='image-container '>
+              <img
+                className='small-image'
+                src={INDIPRO}
+                alt='project-preview'
+              />
+              <div className='overlay'>
+                <div className='read-more text paragraph-large'>
+                  <div className='paragraph-large mb-2'>
+                    INDIPRO TELKOM SURABAYA
                   </div>
+                  {/* <span>
+                    Read more{" "}
+                    <svg
+                      width='24'
+                      height='24'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
+                        fill='#FFFFFF'
+                      />
+                    </svg>
+                  </span> */}
                 </div>
               </div>
-              <TagComponent text='Software Development' theme='primary' />
-              <div className='title heading-small'>
-                SISTEM WAREHOUSE - MJA UNILEVER
-              </div>
-              <div className='desc paragraph-medium regular'>
-                Sistem yang mengakomodir kegiatan pendataan stok barang pada
-                Perusahaan MJA sebagai distributor Unilever.
-              </div>
             </div>
-          </Link>
-          <Link to='/works/1'>
-            <div className='project-container pointer'>
-              <div className='image-container '>
-                <img
-                  className='normal-image'
-                  src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
-                  alt='project-preview'
-                />
-                <div className='overlay'>
-                  <div className='read-more text paragraph-large'>
-                    <div className='paragraph-large mb-2'>
-                      SISTEM WAREHOUSE - MJA UNILEVER
-                    </div>
-                    <span>
-                      Read more{' '}
-                      <svg
-                        width='24'
-                        height='24'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                          d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
-                          fill='#FFFFFF'
-                        />
-                      </svg>
-                    </span>
+            <TagComponent text='Software Development' theme='primary' />
+            <div className='title heading-small'>INDIPRO TELKOM SURABAYA</div>
+            <div className='desc paragraph-medium regular'>
+              Effortless online booking experience for home internet
+              installation, enriched with advanced GIS features
+            </div>
+          </div>
+          <div className='project-container pointer'>
+            <div className='image-container '>
+              <img className='normal-image' src={AEGIS} alt='project-preview' />
+              <div className='overlay'>
+                <div className='read-more text paragraph-large'>
+                  <div className='paragraph-large mb-2'>
+                    AEGIS - SISTEM AKADEMIK
                   </div>
+                  {/* <span>
+                    Read more{" "}
+                    <svg
+                      width='24'
+                      height='24'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
+                        fill='#FFFFFF'
+                      />
+                    </svg>
+                  </span> */}
                 </div>
               </div>
-              <TagComponent text='Software Development' theme='primary' />
-              <div className='title heading-small'>
-                SISTEM WAREHOUSE - MJA UNILEVER
-              </div>
-              <div className='desc paragraph-medium regular'>
-                Sistem yang mengakomodir kegiatan pendataan stok barang pada
-                Perusahaan MJA sebagai distributor Unilever.
-              </div>
             </div>
-          </Link>
+            <TagComponent text='Software Development' theme='primary' />
+            <div className='title heading-small'>AEGIS - SISTEM AKADEMIK</div>
+            <div className='desc paragraph-medium regular'>
+              Empowering educators and students of the Faculty of Dentistry,
+              Universitas Airlangga with our academic system application
+            </div>
+          </div>
         </div>
         <div className='right'>
-          <Link to='/works/1'>
-            <div className='project-container pointer'>
-              <div className='image-container '>
-                <img
-                  className='normal-image'
-                  src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
-                  alt='project-preview'
-                />
-                <div className='overlay'>
-                  <div className='read-more text paragraph-large'>
-                    <div className='paragraph-large mb-2'>
-                      SISTEM WAREHOUSE - MJA UNILEVER
-                    </div>
-                    <span>
-                      Read more{' '}
-                      <svg
-                        width='24'
-                        height='24'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                          d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
-                          fill='#FFFFFF'
-                        />
-                      </svg>
-                    </span>
-                  </div>
+          <div className='project-container pointer'>
+            <div className='image-container '>
+              <img
+                className='normal-image'
+                src={ZELLTECH}
+                alt='project-preview'
+              />
+              <div className='overlay'>
+                <div className='read-more text paragraph-large'>
+                  <div className='paragraph-large mb-2'>E-SALES ZELLTECH</div>
+                  {/* <span>
+                    Read more{" "}
+                    <svg
+                      width='24'
+                      height='24'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
+                        fill='#FFFFFF'
+                      />
+                    </svg>
+                  </span> */}
                 </div>
               </div>
-              <TagComponent text='Software Development' theme='primary' />
-              <div className='title heading-small'>
-                SISTEM WAREHOUSE - MJA UNILEVER
-              </div>
-              <div className='desc paragraph-medium regular'>
-                Sistem yang mengakomodir kegiatan pendataan stok barang pada
-                Perusahaan MJA sebagai distributor Unilever.
-              </div>
             </div>
-          </Link>
-          <Link to='/works/1'>
-            <div className='project-container pointer'>
-              <div className='image-container '>
-                <img
-                  className='small-image'
-                  src='https://i.pinimg.com/474x/92/98/95/9298955af1347afdbbf7f00f31b1f336.jpg'
-                  alt='project-preview'
-                />
-                <div className='overlay'>
-                  <div className='read-more text paragraph-large'>
-                    <div className='paragraph-large mb-2'>
-                      SISTEM WAREHOUSE - MJA UNILEVER
-                    </div>
-                    <span>
-                      Read more{' '}
-                      <svg
-                        width='24'
-                        height='24'
-                        viewBox='0 0 24 24'
-                        fill='none'
-                        xmlns='http://www.w3.org/2000/svg'>
-                        <path
-                          d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
-                          fill='#FFFFFF'
-                        />
-                      </svg>
-                    </span>
+            <TagComponent text='Software Development' theme='primary' />
+            <div className='title heading-small'>E-SALES ZELLTECH</div>
+            <div className='desc paragraph-medium regular'>
+              Zelltech's application: A powerful tool for PT Celcius Indo
+              Perkasa, enabling seamless sales tracking and project monitoring
+            </div>
+          </div>
+          <div className='project-container pointer'>
+            <div className='image-container '>
+              <img
+                className='small-image'
+                src={MJSUNIlEVER}
+                alt='project-preview'
+              />
+              <div className='overlay'>
+                <div className='read-more text paragraph-large'>
+                  <div className='paragraph-large mb-2'>
+                    SISTEM WAREHOUSE - MJA UNILEVER
                   </div>
+                  {/* <span>
+                    Read more{" "}
+                    <svg
+                      width='24'
+                      height='24'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M21.0459 12.7959L14.2959 19.5459C14.0846 19.7573 13.7979 19.876 13.4991 19.876C13.2002 19.876 12.9135 19.7573 12.7022 19.5459C12.4908 19.3346 12.3721 19.048 12.3721 18.7491C12.3721 18.4502 12.4908 18.1635 12.7022 17.9522L17.5312 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H17.5312L12.7041 6.04501C12.4927 5.83367 12.374 5.54702 12.374 5.24814C12.374 4.94925 12.4927 4.66261 12.7041 4.45126C12.9154 4.23992 13.2021 4.12119 13.5009 4.12119C13.7998 4.12119 14.0865 4.23992 14.2978 4.45126L21.0478 11.2013C21.1527 11.3059 21.2359 11.4303 21.2926 11.5672C21.3493 11.7041 21.3784 11.8508 21.3782 11.999C21.3781 12.1472 21.3486 12.2939 21.2916 12.4306C21.2346 12.5674 21.1511 12.6915 21.0459 12.7959Z'
+                        fill='#FFFFFF'
+                      />
+                    </svg>
+                  </span> */}
                 </div>
               </div>
-              <TagComponent text='Software Development' theme='primary' />
-              <div className='title heading-small'>
-                SISTEM WAREHOUSE - MJA UNILEVER
-              </div>
-              <div className='desc paragraph-medium regular'>
-                Sistem yang mengakomodir kegiatan pendataan stok barang pada
-                Perusahaan MJA sebagai distributor Unilever.
-              </div>
             </div>
-          </Link>
+            <TagComponent text='Software Development' theme='primary' />
+            <div className='title heading-small'>
+              SISTEM WAREHOUSE - MJA UNILEVER
+            </div>
+            <div className='desc paragraph-medium regular'>
+              Efficient system facilitating inventory tracking for MJA Company,
+              a trusted Unilever distributor
+            </div>
+          </div>
         </div>
       </div>
       <div className='all-project text-center'>
@@ -190,7 +178,8 @@ const LandingPagesSectionSeven = () => {
           <ButtonComponent
             text='See All Projects'
             icon={<ArrowUpRight size={32} />}
-            className='button outlined-primary border-radius-4 pointer paragraph-large hover'></ButtonComponent>
+            className='button outlined-primary border-radius-4 pointer paragraph-large hover'
+          ></ButtonComponent>
         </Link>
       </div>
     </LandingPagesSectionSevenStyled>
