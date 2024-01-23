@@ -43,6 +43,7 @@ const ProfileContainerStyled = styled.div`
     border-radius: 8px;
     width: 100%;
     height: 478px;
+    object-fit: cover;
   }
   .information {
     .title {

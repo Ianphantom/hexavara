@@ -14,6 +14,8 @@ import SIPINTAR from "../assets/svg/SIPINTAR.svg";
 import BANKBENGKULU from "../assets/svg/RESERVASI KREDIT BANK BENGKULU.svg";
 import TOWERINYOURHAND from "../assets/svg/TOWER IN YOUR HAND.svg";
 import DIANCAGOODS from "../assets/svg/DIANCA GOODS.svg";
+import MANUFACTURINGUBAYA from "../assets/svg/PROMOTION VIDEO TEKNIK MANUFAKTUR UBAYA.svg";
+import SPA from "../assets/svg/REBRANDING DIGITAL MARKETING QUEEN AISYA SALON _ SPA.svg";
 
 export const dataWork = [
   {
@@ -127,5 +129,27 @@ export const dataWork = [
     title: "DIANCA GOODS",
     desc: "User-friendly cosmetic e-commerce site for both customers and dropshippers. The system is also integrated with WhatsApp for registration and verification processes",
     images: DIANCAGOODS,
+  },
+  {
+    id: 17,
+    tag: "Marketing",
+    title: "Promotion Video Teknik Manufaktur Universitas Surabaya",
+    desc: "The promotional video showcases the Manufacturing Engineering program at the University of Surabaya, highlighting its unique features and offerings",
+    images: MANUFACTURINGUBAYA,
+  },
+  {
+    id: 18,
+    tag: "Marketing",
+    title: "Rebranding Digital Marketing Queen Aisya Salon & SPA",
+    desc: "Revitalizing the digital marketing strategy for Queen Aisya Salon & SPA through a comprehensive rebranding initiative",
+    images: SPA,
+  },
+  {
+    id: 19,
+    tag: "Marketing",
+    title: "Aerial Video Company Profile Video PT JMF",
+    desc: "Crafting an engaging aerial company profile video for PT JMF, showcasing their expertise and services from a captivating perspective",
+    images:
+      "https://jmfertilizo.id/wp-content/uploads/2023/06/produksi-756x1024.png",
   },
 ];

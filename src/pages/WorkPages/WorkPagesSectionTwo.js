@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 // import component
@@ -13,8 +13,9 @@ import { Link } from "react-router-dom";
 
 const WorkPagesSectionTwo = () => {
   const [tagActive, setTagActive] = useState("All");
+  const [dataShown, setDataShown] = useState(dataWork);
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPage = Math.ceil(dataWork.length / 9);
+  const totalPage = Math.ceil(dataShown.length / 9);
   console.log(totalPage);
   const goToPage = (number) => {
     if (currentPage + number < 1) {
@@ -29,6 +30,17 @@ const WorkPagesSectionTwo = () => {
       left: 0,
     });
   };
+
+  useEffect(() => {
+    if (tagActive === "All") {
+      setDataShown(dataWork);
+    } else {
+      setDataShown(dataWork.filter((item) => item.tag === tagActive));
+    }
+    setCurrentPage(1);
+  }, [tagActive]);
+
+  console.log(dataShown);
   return (
     <WorkPagesSectionTwoStyled className='container'>
       <div className='tag-container'>
@@ -39,6 +51,11 @@ const WorkPagesSectionTwo = () => {
         />
         <WorkPagesTagButtonComponent
           text='Software Development'
+          tagActive={tagActive}
+          setTagActive={setTagActive}
+        />
+        <WorkPagesTagButtonComponent
+          text='Marketing'
           tagActive={tagActive}
           setTagActive={setTagActive}
         />
@@ -55,9 +72,8 @@ const WorkPagesSectionTwo = () => {
       </div>
 
       <div className='work-container'>
-        {dataWork.map((item) => {
-          if (item.id > (currentPage - 1) * 9 && item.id <= currentPage * 9) {
-            console.log(item.id);
+        {dataShown.map((item, index) => {
+          if (index >= (currentPage - 1) * 9 && index < currentPage * 9) {
             return (
               <div className='work-card-container' key={item.id}>
                 <Link to={`/works`}>
