@@ -17,23 +17,24 @@ const FooterComponent = () => {
           <div className='addresses'>
             <div>
               <div className='company-name paragraph-large'>
-                PT. Hexavara Nawasena.
+                Hexavara Technology
               </div>
               <div className='contact-us paragraph-medium regular'>
-                Contact us on <u>hexavara@gmail.com</u>, <u>+628113451550</u>
+                Contact us on <u>info@hexavara.com</u>, <u>+628113451550</u>
               </div>
             </div>
-            <div className='address address-one'>
+            {/* <div className='address address-one'>
               <div className='address-name paragraph-large'>Jakarta</div>
               <div className='address-location paragraph-medium regular'>
                 Menara Duta Wing A Lantai 7, Jl. H. R. Rasuna Said Kuningan,
                 South Jakarta City, Jakarta 12910
               </div>
-            </div>
+            </div> */}
             <div className='address address-two'>
               <div className='address-name paragraph-large'>Surabaya</div>
               <div className='address-location paragraph-medium regular'>
-                Jl. Ngaglik 50, Kec. Tambaksari, Surabaya, Jawa Timur 60136
+                Graha Bukopin Lantai 7 dan 12, Jl. Panglima Sudirman No. 10-18,
+                Embong Kaliasin, Genteng, Kota Surabaya, Jawa Timur 60271
               </div>
             </div>
           </div>
