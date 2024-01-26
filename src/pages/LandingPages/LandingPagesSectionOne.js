@@ -6,7 +6,7 @@ import styled from "styled-components";
 // immport component
 import ButtonComponent from "../../components/ButtonComponent";
 
-import jumbotron from "../../assets/images/jumbotron.png";
+import jumbotron from "../../assets/images/jumbotron.webp";
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from '@phosphor-icons/react';
 

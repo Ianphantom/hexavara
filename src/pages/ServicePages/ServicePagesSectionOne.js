@@ -8,7 +8,7 @@ import ButtonComponent from "../../components/ButtonComponent";
 
 // import icon
 import { ArrowUpRight } from "@phosphor-icons/react";
-import jumbotron from "../../assets/images/jumbotron.png";
+import jumbotron from "../../assets/images/jumbotron.webp";
 
 const ServicePagesSectionOne = () => {
   useEffect(() => {
