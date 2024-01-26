@@ -1,17 +1,23 @@
-import React from "react";
+import React, {lazy} from "react";
 
 // import component
 import LandingPagesSectionOne from "./LandingPagesSectionOne";
 import LandingPagesSectionTwo from "./LandingPagesSectionTwo";
-import LandingPagesSectionThree from "./LandingPagesSectionThree";
 import LandingPagesSectionFour from "./LandingPagesSectionFour";
 import LandingPagesSectionFive from "./LandingPagesSectionFive";
 import LandingPagesSectionSix from "./LandingPagesSectionSix";
 import HappyClientComponent from "../../components/HappyClientComponent";
 import CTASectionComponent from "../../components/CTASectionComponent";
-import LandingPagesSectionSeven from "./LandingPagesSectionSeven";
 // import LandingPagesSectionEight from "./LandingPagesSectionEight";
 import ScrollTop from "../../components/ScrollTop";
+
+const LandingPagesSectionThree = lazy(() =>
+  import("./LandingPagesSectionThree")
+);
+
+const LandingPagesSectionSeven = lazy(() =>
+  import('./LandingPagesSectionSeven')
+);
 
 const LandingPagesIndex = () => {
   return (

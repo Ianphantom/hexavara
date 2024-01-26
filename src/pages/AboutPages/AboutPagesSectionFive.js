@@ -19,7 +19,7 @@ const AboutPagesSectionFive = () => {
           <img src={founder1} alt='team-profile' />
 
           <div className='information'>
-            <div className='title paragraph-medium regular'>CEO & Founder</div>
+            <div className='title paragraph-medium regular'>Founder & Commissioner</div>
             <div className='name heading-medium'>Ramadhani Tegar Perkasa</div>
           </div>
         </ProfileContainerStyled>

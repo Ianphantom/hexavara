@@ -17,7 +17,7 @@ export const dataServiceLandingPage = [
       "Geographical Information System",
       "Internet of Things",
       "Enterprise Resource Planning",
-      "Backend Management Services (Accounting, HRD, HSE, etc)",
+      "Backoffice Management Services (Accounting, HRD, HSE, etc)",
     ],
     images: "https://3back.com/app/uploads/2017/07/Team-scaled.jpg",
   },

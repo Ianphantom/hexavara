@@ -13,9 +13,9 @@ const ServicePagesSectionFour = () => {
       <div className='product-title'>
         <div className='title display-medium'>Featured Services</div>
         <div className='desc paragraph-medium regular'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris.
+          Discover a range of services—from web development to mobile apps,
+          digital marketing, GIS, IoT, accounting software, advertising, and
+          ERP—providing complete business solutions.
         </div>
       </div>
       <div className='products-container'>
