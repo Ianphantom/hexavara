@@ -11,8 +11,12 @@ import client5 from "../assets/images/telkom-logo.png";
 import client6 from "../assets/images/ubaya-logo.png";
 import client7 from "../assets/images/ui-logo.png";
 import client8 from "../assets/images/wika-logo.png";
-import client9 from "../assets/images/ui-logo.png";
-import client10 from "../assets/images/telkom-logo.png";
+import client9 from "../assets/images/banjarbaru-logo.png";
+import client10 from "../assets/images/x-logo.png";
+import client11 from "../assets/images/unair-logo2.png";
+import client12 from "../assets/images/unilever-logo.png";
+import client13 from "../assets/images/y-logo.png";
+import client14 from "../assets/images/pjb-logo.png";
 
 const HappyClientComponent = () => {
   return (
@@ -21,18 +25,20 @@ const HappyClientComponent = () => {
         Some of Our Happy Clients
       </div>
       <Marquee className='logo-container'>
-        <img src={client1} alt='client-logo' />
-        <img src={client2} alt='client-logo' />
-        <img src={client3} alt='client-logo' />
-        <img src={client4} alt='client-logo' />
         <img src={client5} alt='client-logo' />
         <img src={client6} alt='client-logo' />
-        <img src={client7} alt='client-logo' />
         <img src={client8} alt='client-logo' />
         <img src={client9} alt='client-logo' />
         <img src={client10} alt='client-logo' />
-        <img src={client6} alt='client-logo' />
-        <img src={client10} alt='client-logo' />
+        <img src={client11} alt='client-logo' />
+        <img src={client1} alt='client-logo' />
+        <img src={client12} alt='client-logo' />
+        <img src={client3} alt='client-logo' />
+        <img src={client13} alt='client-logo' />
+        <img src={client4} alt='client-logo' />
+        <img src={client14} alt='client-logo' />
+        <img src={client7} alt='client-logo' />
+        <img src={client2} alt='client-logo' />
       </Marquee>
     </HappyClientComponentStyled>
   );

@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import styled from "styled-components";
 import { dataServiceLandingPage } from "../../data/data-services-landing-page";
 
-const LandingPagesSectionFive = () => {
+const LandingPagesSectionFiveOld = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -19,16 +19,37 @@ const LandingPagesSectionFive = () => {
           </div>
         </div>
         <div className='services-container'>
-          {dataServiceLandingPage.map((item, index) => (
-            <div className='service-container pointer' key={index}>
-              <div className='top'>
-                <div className='title heading-small'>{item.name}</div>
-                <div className='desc paragraph-small regular'>
-                  {item.description}
+          {dataServiceLandingPage.map((itemService, index) => (
+            <div
+              className='service-container'
+              data-aos='fade-right'
+              data-aos-duration='300'
+              key={index}
+            >
+              <div className='icon'>{itemService.icon}</div>
+              <div className='title heading-small'>{itemService.name}</div>
+              <div className='desc paragraph-medium regular'>
+                {itemService.description}
+                <div className='ul'>
+                  {itemService.listServicesItem.map((item, index) => (
+                    <div className='ul-item' key={index}>
+                      <div className='li'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          width='8'
+                          height='8'
+                          viewBox='0 0 12 12'
+                          fill='none'
+                        >
+                          <circle cx='6' cy='6' r='6' fill='#616161' />
+                        </svg>
+                      </div>
+                      <div className='li-text paragraph-medium regular'>
+                        {item}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              <div className='bottom'>
-                <img src={item.images} alt='service-preview' />
               </div>
             </div>
           ))}
@@ -74,32 +95,42 @@ const LandingPagesSectionFiveStyled = styled.div`
 
     .services-container {
       display: flex;
-      gap: 32px;
       align-items: stretch;
+      gap: 32px;
       .service-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: 12px;
-        border: 1px solid var(--hxvr-neutral-60);
-        color: var(--hxvr-neutral-secondary);
-        .top {
-          padding: 40px 24px 24px 24px;
-          .title {
-            color: var(--hxvr-neutral-100);
-            margin-bottom: 8px;
-          }
-          .desc {
-            margin-bottom: 24px;
-          }
+        flex: 1 1 0px;
+        padding: 32px 24px;
+        border-radius: 8px;
+        border: 1px solid var(--hxvr-neutral-50);
+        background: #fdfdfd;
+        .icon {
+          width: 56px;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--primary-base);
+          border-radius: 8px;
+          margin-bottom: 32px;
         }
-        .bottom {
-          width: 100%;
-          img {
-            min-width: 100%;
-            border-radius: 0px 0px 12px 12px;
-            height: 196px;
-            object-fit: cover;
+        .title {
+          margin-bottom: 8px;
+        }
+        .desc {
+          color: var(--hxvr-neutral-secondary);
+          .ul {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            .ul-item {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              .li-text {
+                color: var(--hxvr-neutral-secondary);
+              }
+            }
           }
         }
       }
@@ -121,4 +152,4 @@ const LandingPagesSectionFiveStyled = styled.div`
   }
 `;
 
-export default LandingPagesSectionFive;
+export default LandingPagesSectionFiveOld;

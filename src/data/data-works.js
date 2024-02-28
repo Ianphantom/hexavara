@@ -70,16 +70,16 @@ export const dataWork = [
   {
     id: 8,
     tag: "Software Development",
-    title: "E-TRUCKING",
-    desc: "Optimize monitoring for PT Javara Multiindo Fertilizo's mining trucks with our efficient check-in and check-out application",
-    images: ETRUCKING,
+    title: "TOWER IN YOUR HAND",
+    desc: "Application for the supervision of telecommunication towers in Pemeksaan Regency by the Department of Communication and Information Technology",
+    images: TOWERINYOURHAND,
   },
   {
     id: 9,
     tag: "Software Development",
-    title: "ARCHIRECON",
-    desc: "Application for company profiles and ordering Archirecon's architectural designs",
-    images: ARCHIREON,
+    title: "SIPINTAR",
+    desc: "Application used by the Public Works and Housing Department of Banjarbaru City to search for information on spatial planning.",
+    images: SIPINTAR,
   },
   {
     id: 10,
@@ -105,9 +105,9 @@ export const dataWork = [
   {
     id: 13,
     tag: "Software Development",
-    title: "SIPINTAR",
-    desc: "Application used by the Public Works and Housing Department of Banjarbaru City to search for information on spatial planning.",
-    images: SIPINTAR,
+    title: "ARCHIRECON",
+    desc: "Application for company profiles and ordering Archirecon's architectural designs",
+    images: ARCHIREON,
   },
   {
     id: 14,
@@ -119,9 +119,9 @@ export const dataWork = [
   {
     id: 15,
     tag: "Software Development",
-    title: "TOWER IN YOUR HAND",
-    desc: "Application for the supervision of telecommunication towers in Pemeksaan Regency by the Department of Communication and Information Technology",
-    images: TOWERINYOURHAND,
+    title: "E-TRUCKING",
+    desc: "Optimize monitoring for PT Javara Multiindo Fertilizo's mining trucks with our efficient check-in and check-out application",
+    images: ETRUCKING,
   },
   {
     id: 16,

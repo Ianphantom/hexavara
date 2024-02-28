@@ -24,7 +24,8 @@ const ServicePagesSectionFour = () => {
             className='product-container'
             key={item.id}
             data-aos='zoom-out'
-            data-aos-duration='1500'>
+            data-aos-duration='1500'
+          >
             <div>
               <div className='icon'>
                 <img src={item.icon} alt='product-icon' />
@@ -67,7 +68,7 @@ const ServicePagesSectionFourStyled = styled.div`
   }
   .products-container {
     display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     gap: 24px;
     .product-container {
