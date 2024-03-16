@@ -9,8 +9,8 @@ const FloatingButton = () => {
       {
         top: 0,
         left: 0,
-      },
-      "smooth"
+		behavior: 'smooth'
+      }
     );
   };
   const [isScrolled, setIsScrolled] = useState(false);

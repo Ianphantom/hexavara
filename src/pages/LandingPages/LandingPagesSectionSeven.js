@@ -9,10 +9,10 @@ import ButtonComponent from "../../components/ButtonComponent";
 import { Link } from "react-router-dom";
 
 import { ArrowUpRight } from "@phosphor-icons/react";
-import AEGIS from "../../assets/svg/AEGIS - SISTEM AKADEMIK.svg";
-import INDIPRO from "../../assets/svg/INDIPRO TELKOM SBY.svg";
-import ZELLTECH from "../../assets/svg/E-SALES ZELLTECH.svg";
-import MJSUNIlEVER from "../../assets/svg/SISTEM WAREHOUSE - MJA UNILEVER.svg";
+import AEGIS from "../../assets/images/unair.png";
+import INDIPRO from "../../assets/images/indipro.png";
+import ZELLTECH from "../../assets/images/zalltech.png";
+import MJSUNIlEVER from "../../assets/images/unilever.png";
 
 const LandingPagesSectionSeven = () => {
   useEffect(() => {
@@ -215,11 +215,12 @@ const LandingPagesSectionSevenStyled = styled.div`
         &:hover {
           img {
             &.normal-image {
-              height: 710px;
+              height: 698px;
             }
             &.small-image {
-              height: 512px;
+              height: 500px;
             }
+            object-fit: fit;
           }
         }
         img {
@@ -228,10 +229,10 @@ const LandingPagesSectionSevenStyled = styled.div`
           width: 100%;
           object-fit: cover;
           &.normal-image {
-            height: 698px;
+            height: 618px;
           }
           &.small-image {
-            height: 500px;
+            height: 420px;
           }
         }
         .overlay {

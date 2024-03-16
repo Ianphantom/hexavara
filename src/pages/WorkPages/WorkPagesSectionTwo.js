@@ -28,8 +28,18 @@ const WorkPagesSectionTwo = () => {
     window.scroll({
       top: 0,
       left: 0,
+	  behavior: 'smooth',
     });
   };
+
+  const setToPage = (number) => {
+	setCurrentPage(number);
+	 window.scroll({
+		top: 0,
+		left: 0,
+		behavior: 'smooth',
+	});
+  }
 
   useEffect(() => {
     if (tagActive === "All") {
@@ -104,11 +114,10 @@ const WorkPagesSectionTwo = () => {
             arr.push(
               <div
                 className={`pager-item pointer ${
-                  currentPage === i + 1 ? "active" : ""
+                  currentPage === i + 1 ? 'active' : ''
                 }`}
-                onClick={() => setCurrentPage(i + 1)}
-                key={i}
-              >
+                onClick={() => setToPage(i + 1)}
+                key={i}>
                 <div className='paragraph-small regular'>{i + 1}</div>
               </div>
             );

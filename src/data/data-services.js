@@ -1,57 +1,61 @@
-import sistemManagementRSIcon from "../assets/images/sistem-manajemen-rs-icon.png";
-import sistemKeuanganDanKoperasi from "../assets/images/sistem-keuangan-dan-koperasi.png";
-import enterpriseResourcePlanning from "../assets/images/enterprise-resource-planning.png";
-import eGovernment from "../assets/images/e-government.png";
-import sistemPengelolaanTokoOnline from "../assets/images/sistem-pengelolaan-toko-online.png";
-import ruangTemu from "../assets/images/ruang-temu.png";
+
+
+import {
+  ChartLine,
+  Newspaper,
+  DeviceMobile,
+  HardDrives,
+  MathOperations,
+  UsersThree,
+} from '@phosphor-icons/react';
 
 export const dataService = [
   {
     id: 1,
-    name: "Digital Marketing",
+    name: 'Digital Marketing',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: sistemManagementRSIcon,
+      "Crafting tailored digital strategies to amplify your brand's online presence and drive meaningful engagement.",
+    icon: <ChartLine size={24} color='#3182FF' weight='fill' />,
     isFeatured: true,
   },
   {
     id: 2,
-    name: "Advertising",
+    name: 'Advertising',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: sistemKeuanganDanKoperasi,
+      'Creating captivating campaigns that cut through the noise and connect your brand with your target audience.',
+    icon: <Newspaper size={24} color='#3182FF' weight='fill' />,
     isFeatured: true,
   },
   {
     id: 3,
-    name: "UI/UX Design",
+    name: 'UI/UX Design',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: enterpriseResourcePlanning,
+      'Elevating user experiences through intuitive and visually stunning designs that resonate with your audience.',
+    icon: <DeviceMobile size={24} color='#3182FF' weight='fill' />,
     isFeatured: true,
   },
   {
     id: 4,
-    name: "Business Consultant",
+    name: 'Business Consultant',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: eGovernment,
+      'Providing expert guidance to optimize operations, streamline processes, and achieve sustainable growth.',
+    icon: <HardDrives size={24} color='#3182FF' weight='fill' />,
     isFeatured: true,
   },
   {
     id: 5,
-    name: "Accounting Consultant",
+    name: 'Accounting Consultant',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: sistemPengelolaanTokoOnline,
+      'Navigating financial complexities with precision and insight, ensuring sound fiscal management for your business.',
+    icon: <MathOperations size={24} color='#3182FF' weight='fill' />,
     isFeatured: false,
   },
   {
     id: 6,
-    name: "HR Consultant",
+    name: 'HR Consultant',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-    icon: ruangTemu,
+      'Empowering your team through strategic HR solutions that foster a thriving and cohesive workplace culture.',
+    icon: <UsersThree size={24} color='#3182FF' weight='fill' />,
     isFeatured: false,
   },
 ];

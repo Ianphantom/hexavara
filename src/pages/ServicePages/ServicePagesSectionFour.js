@@ -11,11 +11,11 @@ const ServicePagesSectionFour = () => {
   return (
     <ServicePagesSectionFourStyled className='container'>
       <div className='product-title'>
-        <div className='title display-medium'>Featured Services</div>
+        <div className='title display-medium'>Additional Services</div>
         <div className='desc paragraph-medium regular'>
-          Discover a range of services—from web development to mobile apps,
-          digital marketing, GIS, IoT, accounting software, advertising, and
-          ERP—providing complete business solutions.
+          In addition to our core offerings, we also provide additional services
+          to ensure comprehensive support tailored to meet your unique business
+          needs and goals.
         </div>
       </div>
       <div className='products-container'>
@@ -24,12 +24,9 @@ const ServicePagesSectionFour = () => {
             className='product-container'
             key={item.id}
             data-aos='zoom-out'
-            data-aos-duration='1500'
-          >
+            data-aos-duration='1500'>
             <div>
-              <div className='icon'>
-                <img src={item.icon} alt='product-icon' />
-              </div>
+              <div className='icon'>{item.icon}</div>
               <div className='name paragraph-medium'>{item.name}</div>
               <div className='desc paragraph-medium regular'>
                 {item.description}
@@ -89,6 +86,13 @@ const ServicePagesSectionFourStyled = styled.div`
       }
       .icon {
         margin-bottom: 24px;
+        width: 54px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ecf6ff;
+        border-radius: 50%;
         img {
           width: 54px;
           height: 54px;
