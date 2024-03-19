@@ -9,14 +9,19 @@ import client3 from "../assets/images/its-logo.png";
 import client4 from "../assets/images/perindo-logo.png";
 import client5 from "../assets/images/telkom-logo.png";
 import client6 from "../assets/images/ubaya-logo.png";
-import client7 from "../assets/images/ui-logo.png";
+import client7 from "../assets/images/Berau Coal.png";
 import client8 from "../assets/images/wika-logo.png";
 import client9 from "../assets/images/banjarbaru-logo.png";
 import client10 from "../assets/images/x-logo.png";
-import client11 from "../assets/images/unair-logo2.png";
+import client11 from "../assets/images/UNAIR(1).png";
 import client12 from "../assets/images/unilever-logo.png";
 import client13 from "../assets/images/y-logo.png";
 import client14 from "../assets/images/pjb-logo.png";
+import client15 from "../assets/images/zelltech-logo.png";
+import client16 from "../assets/images/BMT Muda.jpg";
+import client17 from "../assets/images/Dianca Goods.png";
+import client18 from "../assets/images/Telkom AMOEBA.png";
+import client19 from "../assets/images/Sinarmas.png";
 
 const HappyClientComponent = () => {
   return (
@@ -38,7 +43,12 @@ const HappyClientComponent = () => {
         <img src={client4} alt='client-logo' />
         <img src={client14} alt='client-logo' />
         <img src={client7} alt='client-logo' />
+        <img src={client15} alt='client-logo' />
+        <img src={client16} alt='client-logo' />
+        <img src={client17} alt='client-logo' />
+        <img src={client18} alt='client-logo' />
         <img src={client2} alt='client-logo' />
+        <img src={client19} alt='client-logo' />
       </Marquee>
     </HappyClientComponentStyled>
   );
@@ -50,9 +60,14 @@ const HappyClientComponentStyled = styled.div`
   flex-direction: column;
   gap: 48px;
   .logo-container {
+    margin-top: 50px;
     display: flex;
-    gap: 32px;
     align-items: center;
+
+    img {
+      height: 60px;
+      margin-left: 40px;
+    }
   }
 `;
 
