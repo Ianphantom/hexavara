@@ -22,6 +22,8 @@ import client16 from "../assets/images/BMT Muda.jpg";
 import client17 from "../assets/images/Dianca Goods.png";
 import client18 from "../assets/images/Telkom AMOEBA.png";
 import client19 from "../assets/images/Sinarmas.png";
+import client20 from "../assets/images/UI.png";
+import client21 from "../assets/images/kominfo.png";
 
 const HappyClientComponent = () => {
   return (
@@ -49,6 +51,8 @@ const HappyClientComponent = () => {
         <img src={client18} alt='client-logo' />
         <img src={client2} alt='client-logo' />
         <img src={client19} alt='client-logo' />
+        <img src={client20} alt='client-logo' />
+        <img src={client21} alt='client-logo' />
       </Marquee>
     </HappyClientComponentStyled>
   );
