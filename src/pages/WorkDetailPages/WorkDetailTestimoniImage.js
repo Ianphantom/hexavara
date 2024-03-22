@@ -93,6 +93,11 @@ const WorkDetailTestimoniImageStyled = styled.div`
       }
     }
   }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
 `;
 
 export default WorkDetailTestimoniImage;

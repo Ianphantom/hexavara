@@ -8,7 +8,7 @@ import TagComponent from "../../components/TagComponent";
 const WorkDetailPagesSectionOne = () => {
   return (
     <WorkDetailPagesSectionOneStyled className='container'>
-      <div className='left'>
+      <div className='left container'>
         <div className='breadcrumb-container'>
           <div className='paragraph-small regular first'>Works</div>
           <div>
@@ -185,6 +185,19 @@ const WorkDetailPagesSectionOneStyled = styled.div`
       width: 100%;
       border-radius: 12px;
       object-fit: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    .left {
+      width: 100%;
+    }
+
+    .right {
+      width: 100%;
     }
   }
 `;

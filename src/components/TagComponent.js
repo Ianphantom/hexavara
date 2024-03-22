@@ -4,7 +4,7 @@ import styled from "styled-components";
 const TagComponent = ({ text, theme }) => {
   return (
     <TagComponentStyled className={`border-radius-medium ${theme}`}>
-      <div className='paragraph-small tag-text'>{text}</div>
+      <div className='paragraph-small tag-text regular'>{text}</div>
     </TagComponentStyled>
   );
 };

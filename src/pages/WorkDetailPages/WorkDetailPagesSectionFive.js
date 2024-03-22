@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const WorkDetailPagesSectionFive = () => {
   return (
-    <WorkDetailPagesSectionFiveStyled className='container'>
+    <WorkDetailPagesSectionFiveStyled>
       <div className='title heading-large'>
         Impact for the <br />
         Client
@@ -38,6 +38,19 @@ const WorkDetailPagesSectionFiveStyled = styled.div`
     flex-direction: column;
     gap: 24px;
     color: var(--hxvr-neutral-secondary);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 16px 0px;
+	gap: 16px;
+    .title {
+      width: 100%;
+    }
+
+    .desc {
+      width: 100%;
+    }
   }
 `;
 

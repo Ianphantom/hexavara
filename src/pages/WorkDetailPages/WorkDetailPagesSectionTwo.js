@@ -3,33 +3,33 @@ import styled from "styled-components";
 
 const WorkDetailPagesSectionTwo = () => {
   return (
-    <WorkDetailPagesSectionTwoStyled className='container'>
-      <div className='title heading-large'>
-        About <br />
-        The Project
-      </div>
-      <div className='desc'>
-        <div className='paragraph-medium regular'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-          tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-          suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
-          maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales
-          sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
-          placerat.
-        </div>
-        <div className='paragraph-medium regular'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
-          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
-          mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis
-          tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
-          suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at
-          maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales
-          sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat
-          placerat.
-        </div>
-      </div>
+    <WorkDetailPagesSectionTwoStyled>
+		<div className='title heading-large'>
+			About <br />
+			The Project
+		</div>
+		<div className='desc'>
+			<div className='paragraph-medium regular'>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+			mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+			fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+			vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+			ornare leo, non suscipit magna interdum eu. Curabitur pellentesque
+			nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo
+			lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+			vel euismod erat placerat.
+			</div>
+			<div className='paragraph-medium regular'>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+			mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+			fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+			vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+			ornare leo, non suscipit magna interdum eu. Curabitur pellentesque
+			nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo
+			lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+			vel euismod erat placerat.
+			</div>
+		</div>
     </WorkDetailPagesSectionTwoStyled>
   );
 };
@@ -48,6 +48,19 @@ const WorkDetailPagesSectionTwoStyled = styled.div`
     flex-direction: column;
     gap: 24px;
     color: var(--hxvr-neutral-secondary);
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+	gap: 40px;
+	.title {
+		width: 100%;
+	}
+
+	.desc {
+		width: 100%;
+	}
   }
 `;
 

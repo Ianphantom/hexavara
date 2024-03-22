@@ -27,6 +27,7 @@ export const dataWork = [
     title: 'INDIPRO TELKOM SURABAYA',
     desc: 'Effortless online booking experience for home internet installation, enriched with advanced GIS features',
     images: INDIPRO,
+    uploadStatus: 'new',
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ export const dataWork = [
     title: 'AEGIS - SISTEM AKADEMIK',
     desc: 'Empowering educators and students of the Faculty of Dentistry, Universitas Airlangga with our academic system application',
     images: AEGIS,
+    uploadStatus: 'new',
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ export const dataWork = [
     title: 'E-SALES ZELLTECH',
     desc: "Zelltech's application: A powerful tool for PT Celcius Indo Perkasa, enabling seamless sales tracking and project monitoring",
     images: ZELLTECH,
+    uploadStatus: 'new',
   },
   {
     id: 4,
@@ -48,6 +51,7 @@ export const dataWork = [
     title: 'SISTEM WAREHOUSE - MJS UNILEVER',
     desc: 'Efficient system facilitating inventory tracking for MJA Company, a trusted Unilever distributor',
     images: MJSUNIlEVER,
+    uploadStatus: 'regular',
   },
   {
     id: 5,
@@ -55,6 +59,7 @@ export const dataWork = [
     title: 'QPS WIKA GEDUNG',
     desc: 'Revolutionizing property assessments, PT. WIKA Gedung employs an innovative application for surveying residential units at Puncak CBD Apartments',
     images: WIKA,
+    uploadStatus: 'regular',
   },
   {
     id: 6,
@@ -62,6 +67,7 @@ export const dataWork = [
     title: 'RESCUE.ID',
     desc: 'Empowering emergency response at Dr. Soetomo Hospital, Surabaya. Our application offers reporting and guidance for heart attack emergencies, ensuring swift Code Blue interventions',
     images: RESCUE,
+    uploadStatus: 'regular',
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ export const dataWork = [
     title: 'SILY',
     desc: "Unveiling the Lamongan District's Smart City Portal App. Explore 360-degree photos, report issues, and ensure swift emergency responses with advanced features",
     images: SILY,
+    uploadStatus: 'regular',
   },
   {
     id: 8,
@@ -76,6 +83,7 @@ export const dataWork = [
     title: 'TOWER IN YOUR HAND',
     desc: 'Application for the supervision of telecommunication towers in Pemeksaan Regency by the Department of Communication and Information Technology',
     images: TOWERINYOURHAND,
+    uploadStatus: 'regular',
   },
   {
     id: 9,
@@ -83,6 +91,7 @@ export const dataWork = [
     title: 'SIPINTAR',
     desc: 'Application used by the Public Works and Housing Department of Banjarbaru City to search for information on spatial planning.',
     images: SIPINTAR,
+    uploadStatus: 'regular',
   },
   {
     id: 10,
@@ -90,6 +99,7 @@ export const dataWork = [
     title: 'BMOMS',
     desc: 'Revolutionize maternal care with our mental health screening app for expectant mothers. Centrally recorded results at Dinkes, automating referrals to KIA and Keswa at Puskesmas',
     images: BMOMS,
+    uploadStatus: 'regular',
   },
   {
     id: 11,
@@ -104,6 +114,7 @@ export const dataWork = [
     title: 'SIMASTER BKD',
     desc: 'Human resources information system for East Java province integrating multiple databases on a Hybrid device. The result of collaboration with the East Java Regional Personnel Agency',
     images: SIMASTERBKD,
+    uploadStatus: 'regular',
   },
   {
     id: 13,
@@ -111,6 +122,7 @@ export const dataWork = [
     title: 'ARCHIRECON',
     desc: "Application for company profiles and ordering Archirecon's architectural designs",
     images: ARCHIREON,
+    uploadStatus: 'regular',
   },
   {
     id: 14,
@@ -118,6 +130,7 @@ export const dataWork = [
     title: 'RESERVASI KREDIT BANK BENGKULU',
     desc: 'Online reservation system for physical evidence to simplify and expedite credit applications for the Regional-Owned Enterprises (BUMD) of Bank Bengkulu',
     images: BANKBENGKULU,
+    uploadStatus: 'regular',
   },
   {
     id: 15,
@@ -125,6 +138,7 @@ export const dataWork = [
     title: 'E-TRUCKING',
     desc: "Optimize monitoring for PT Javara Multiindo Fertilizo's mining trucks with our efficient check-in and check-out application",
     images: ETRUCKING,
+    uploadStatus: 'regular',
   },
   {
     id: 16,
@@ -132,6 +146,7 @@ export const dataWork = [
     title: 'DIANCA GOODS',
     desc: 'User-friendly cosmetic e-commerce site for both customers and dropshippers. The system is also integrated with WhatsApp for registration and verification processes',
     images: DIANCAGOODS,
+    uploadStatus: 'regular',
   },
   {
     id: 17,
@@ -139,6 +154,7 @@ export const dataWork = [
     title: 'Promotion Video Teknik Manufaktur Universitas Surabaya',
     desc: 'The promotional video showcases the Manufacturing Engineering program at the University of Surabaya, highlighting its unique features and offerings',
     images: MANUFACTURINGUBAYA,
+    uploadStatus: 'regular',
   },
   {
     id: 18,
@@ -146,6 +162,7 @@ export const dataWork = [
     title: 'Rebranding Digital Marketing Queen Aisya Salon & SPA',
     desc: 'Revitalizing the digital marketing strategy for Queen Aisya Salon & SPA through a comprehensive rebranding initiative',
     images: SPA,
+    uploadStatus: 'regular',
   },
   {
     id: 19,
@@ -154,6 +171,7 @@ export const dataWork = [
     desc: 'Crafting an engaging aerial company profile video for PT JMF, showcasing their expertise and services from a captivating perspective',
     images:
       'https://jmfertilizo.id/wp-content/uploads/2023/06/produksi-756x1024.png',
+    uploadStatus: 'regular',
   },
   {
     id: 20,
@@ -161,6 +179,7 @@ export const dataWork = [
     title: 'PPDB SMPN BENGKULU',
     desc: 'Application and system used to assist and accommodate the process of admitting new students for school in Bengkulu province.',
     images: PPDBBENGKULU,
+    uploadStatus: 'regular',
   },
   {
     id: 21,
@@ -168,6 +187,7 @@ export const dataWork = [
     title: 'PJB UNITE',
     desc: 'Application that accommodates social media, group interaction, chat, and monitoring management system for PJB Services.',
     images: PJB,
+    uploadStatus: 'regular',
   },
   {
     id: 22,
@@ -175,5 +195,6 @@ export const dataWork = [
     title: 'SISTEM MANAJEMEN POLA RUANG KAB. BANJARBARU',
     desc: 'Application used to search for information on the type of area, display types of activities, and apply for development permits.',
     images: TATARUANGKABBANJARBARU,
+    uploadStatus: 'regular',
   },
 ];

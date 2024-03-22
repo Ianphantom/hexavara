@@ -1,44 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import WorkCardComponent from "../../components/WorkCardComponent";
+import { dataWork } from "../../data/data-works";
 
 const WorkDetailPagesSectionEight = () => {
-  return (
-    <WorkDetailPagesSectionEightStyled className='container'>
-      <div className='title heading-large'>Related Project</div>
-      <div className='desc paragraph-large regular'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ducimus,
-        praesentium qui iusto corrupti debitis voluptates nisi
-      </div>
-      <div className='work-container'>
-        <div className='work-card-container'>
-          <WorkCardComponent
-            tag='Software Development'
-            title='SISTEM WAREHOUSE - MJA UNILEVER'
-            desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-            theme='small'
-          />
-        </div>
-        <div className='work-card-container'>
-          <WorkCardComponent
-            tag='Software Development'
-            title='SISTEM WAREHOUSE - MJA UNILEVER'
-            desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-            theme='small'
-          />
-        </div>
-        <div className='work-card-container'>
-          <WorkCardComponent
-            tag='Software Development'
-            title='SISTEM WAREHOUSE - MJA UNILEVER'
-            desc='Sistem yang mengakomodir kegiatan pendataan stok barang pada perusahaan MJA sebagai distributor unilever'
-            theme='small'
-          />
-        </div>
-      </div>
-    </WorkDetailPagesSectionEightStyled>
-  );
+	const [dataNew] = useState(
+		dataWork.filter((item) => item.uploadStatus === 'new').reverse().slice(0,3)
+	);
+	return (
+		<WorkDetailPagesSectionEightStyled className='container'>
+		<div className='title heading-large'>Related Project</div>
+		<div className='desc paragraph-large regular'>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ducimus,
+			praesentium qui iusto corrupti debitis voluptates nisi
+		</div>
+		<div className='work-container'>
+			{dataNew.map((item) => (
+				<div className='work-card-container' key={item.id}>
+					<WorkCardComponent
+						tag={item.tag}
+						title={item.title}
+						desc={item.desc}
+						image={item.images}
+						theme='small'
+					/>
+				</div>
+				)
+			)}
+		</div>
+		</WorkDetailPagesSectionEightStyled>
+	);
 };
 
 const WorkDetailPagesSectionEightStyled = styled.div`

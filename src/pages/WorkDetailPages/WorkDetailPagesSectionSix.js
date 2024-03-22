@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const WorkDetailPagesSectionSix = () => {
   return (
-    <WorkDetailPagesSectionSixStyled className='container'>
+    <WorkDetailPagesSectionSixStyled>
       <ItemContainerStyled>
         <div className='image'>
           <img
@@ -91,6 +91,10 @@ const WorkDetailPagesSectionSixStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 60px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+	padding: 32px 0px;
+  }
 `;
 
 const ItemContainerStyled = styled.div`
@@ -133,6 +137,23 @@ const ItemContainerStyled = styled.div`
         border: 1px solid var(--primary-base, #3182ff);
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 32px 0px;
+
+    &.reversed {
+      flex-direction: column;
+    }
+
+	.image {
+		width: 100%;
+	}
+
+	.modules {
+		width: 100%;
+	}
   }
 `;
 

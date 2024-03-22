@@ -88,4 +88,149 @@ export const dataProduct = [
     image:
       'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
   },
+  {
+    id: 4,
+    name: 'Lorem Ipsum 1',
+    description:
+      'Providing system services for planning, implementation and evaluation on projects.',
+    modules: [
+      {
+        id: 1,
+        title: 'Modul 1 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 2,
+        title: 'Modul 2 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 3,
+        title: 'Modul 3 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+    ],
+    longDescription:
+      'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+    icon: <Student size={32} color='#3182ff' weight='fill' />,
+    isFeatured: false,
+    image:
+      'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
+  },
+  {
+    id: 5,
+    name: 'Lorem Ipsum 2',
+    description:
+      'Providing system services for planning, implementation and evaluation on projects.',
+    modules: [
+      {
+        id: 1,
+        title: 'Modul 1 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 2,
+        title: 'Modul 2 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 3,
+        title: 'Modul 3 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+    ],
+    longDescription:
+      'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+    icon: <Student size={32} color='#3182ff' weight='fill' />,
+    isFeatured: false,
+    image:
+      'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
+  },
+  {
+    id: 6,
+    name: 'Lorem Ipsum 3',
+    description:
+      'Providing system services for planning, implementation and evaluation on projects.',
+    modules: [
+      {
+        id: 1,
+        title: 'Modul 1 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 2,
+        title: 'Modul 2 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 3,
+        title: 'Modul 3 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+    ],
+    longDescription:
+      'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+    icon: <Student size={32} color='#3182ff' weight='fill' />,
+    isFeatured: false,
+    image:
+      'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
+  },
+  {
+    id: 7,
+    name: 'Lorem Ipsum 4',
+    description:
+      'Providing system services for planning, implementation and evaluation on projects.',
+    modules: [
+      {
+        id: 1,
+        title: 'Modul 1 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 2,
+        title: 'Modul 2 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 3,
+        title: 'Modul 3 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+    ],
+    longDescription:
+      'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+    icon: <Student size={32} color='#3182ff' weight='fill' />,
+    isFeatured: false,
+    image:
+      'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
+  },
+  {
+    id: 8,
+    name: 'Lorem Ipsum 5',
+    description:
+      'Providing system services for planning, implementation and evaluation on projects.',
+    modules: [
+      {
+        id: 1,
+        title: 'Modul 1 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 2,
+        title: 'Modul 2 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+      {
+        id: 3,
+        title: 'Modul 3 - [Nama Modul]',
+        desc: 'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+      },
+    ],
+    longDescription:
+      'Lorem ipsum del culametan metmet Lorem ipsum del culametan metmetLorem ipsum del culametan metmetLorem ipsum del culametan metmet.',
+    icon: <Student size={32} color='#3182ff' weight='fill' />,
+    isFeatured: false,
+    image:
+      'https://www.leadsquared.com/wp-content/uploads/2023/03/hospital-management-system.jpg',
+  },
 ];

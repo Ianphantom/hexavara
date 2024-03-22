@@ -17,14 +17,20 @@ const WorkDetailPages = () => {
     <div>
       <ScrollTop />
       <WorkDetailPagesSectionOne />
-      <WorkDetailPagesSectionTwo />
+      <div className='container'>
+        <WorkDetailPagesSectionTwo />
+      </div>
       <WorkDetailPagesSectionThree />
       <WorkDetailPagesSectionFour />
-      <WorkDetailPagesSectionFive />
-      <WorkDetailPagesSectionSix />
-      <WorkDetailPagesSectionSeven />
+      <div className='container'>
+        <WorkDetailPagesSectionFive />
+        <WorkDetailPagesSectionSix />
+        <WorkDetailPagesSectionSeven />
+      </div>
       <CTASectionComponent title='Empower your team and build a product your users love.' />
-      <WorkDetailPagesSectionEight />
+      <div className='container'>
+        <WorkDetailPagesSectionEight />
+      </div>
       <WorkDetailTestimoniImage />
     </div>
   );

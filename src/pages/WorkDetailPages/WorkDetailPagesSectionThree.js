@@ -80,6 +80,16 @@ const WorkDetailPagesSectionThreeStyled = styled.div`
       padding: 32px 24px;
     }
   }
+
+  @media (max-width: 768px) {
+    .solutions-container{
+		flex-direction: column;
+		gap: 16px;
+	}
+	svg {
+		display: none;
+	}
+  }
 `;
 
 export default WorkDetailPagesSectionThree;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const WorkDetailPagesSectionSeven = () => {
   return (
-    <WorkDetailPagesSectionSevenStyled className='container'>
+    <WorkDetailPagesSectionSevenStyled>
       <div className='title text-center heading-large'>
         What the client said?
       </div>
@@ -47,6 +47,10 @@ const WorkDetailPagesSectionSevenStyled = styled.div`
       &.2 {
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 0px 64px 0px;
   }
 `;
 
